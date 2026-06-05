@@ -1,0 +1,1077 @@
+2026-05-30T04:59:22.800Z [[31merror[39m]: [31mRedis error: read ECONNRESET[39m {"errno":-4077,"code":"ECONNRESET","syscall":"read","stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)"}
+2026-05-30T04:59:22.856Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:22.962Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:23.119Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:23.327Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:23.586Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:23.896Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:24.253Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:24.660Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:25.113Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:25.646Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:26.263Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:26.890Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:27.549Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:28.260Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:29.024Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:29.835Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:30.697Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:31.614Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:32.634Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:33.697Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:34.786Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:35.893Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:37.064Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:38.271Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:39.659Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:41.049Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:42.407Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:43.812Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:45.264Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:46.778Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:48.337Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:49.953Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:51.611Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:53.335Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:55.097Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:56.907Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:57.598Z [[31merror[39m]: [31m{[39m
+[31m  err: AggregateError [ECONNREFUSED]: [39m
+[31m      at F:\library-devops\backend\node_modules\pg-pool\index.js:45:11[39m
+[31m      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at async query (F:\library-devops\backend\src\config\database.js:74:18)[39m
+[31m      at async exports.login (F:\library-devops\backend\src\controllers\auth.controller.js:60:20) {[39m
+[31m    code: 'ECONNREFUSED',[39m
+[31m    [errors]: [ [Error], [Error] ][39m
+[31m  },[39m
+[31m  url: '/api/v1/auth/login',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-05-30T04:59:57.599Z [[32minfo[39m]: [32m::1 - - [30/May/2026:04:59:57 +0000] "POST /api/v1/auth/login HTTP/1.1" 500 436 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T04:59:58.763Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T04:59:59.481Z [[31merror[39m]: [31m{[39m
+[31m  err: AggregateError [ECONNREFUSED]: [39m
+[31m      at F:\library-devops\backend\node_modules\pg-pool\index.js:45:11[39m
+[31m      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at async query (F:\library-devops\backend\src\config\database.js:74:18)[39m
+[31m      at async exports.login (F:\library-devops\backend\src\controllers\auth.controller.js:60:20) {[39m
+[31m    code: 'ECONNREFUSED',[39m
+[31m    [errors]: [ [Error], [Error] ][39m
+[31m  },[39m
+[31m  url: '/api/v1/auth/login',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-05-30T04:59:59.482Z [[32minfo[39m]: [32m::1 - - [30/May/2026:04:59:59 +0000] "POST /api/v1/auth/login HTTP/1.1" 500 436 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T04:59:59.793Z [[31merror[39m]: [31m{[39m
+[31m  err: AggregateError [ECONNREFUSED]: [39m
+[31m      at F:\library-devops\backend\node_modules\pg-pool\index.js:45:11[39m
+[31m      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at async query (F:\library-devops\backend\src\config\database.js:74:18)[39m
+[31m      at async exports.login (F:\library-devops\backend\src\controllers\auth.controller.js:60:20) {[39m
+[31m    code: 'ECONNREFUSED',[39m
+[31m    [errors]: [ [Error], [Error] ][39m
+[31m  },[39m
+[31m  url: '/api/v1/auth/login',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-05-30T04:59:59.794Z [[32minfo[39m]: [32m::1 - - [30/May/2026:04:59:59 +0000] "POST /api/v1/auth/login HTTP/1.1" 500 436 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:00:00.018Z [[31merror[39m]: [31m{[39m
+[31m  err: AggregateError [ECONNREFUSED]: [39m
+[31m      at F:\library-devops\backend\node_modules\pg-pool\index.js:45:11[39m
+[31m      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at async query (F:\library-devops\backend\src\config\database.js:74:18)[39m
+[31m      at async exports.login (F:\library-devops\backend\src\controllers\auth.controller.js:60:20) {[39m
+[31m    code: 'ECONNREFUSED',[39m
+[31m    [errors]: [ [Error], [Error] ][39m
+[31m  },[39m
+[31m  url: '/api/v1/auth/login',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-05-30T05:00:00.020Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:00:00 +0000] "POST /api/v1/auth/login HTTP/1.1" 500 436 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:00:00.239Z [[31merror[39m]: [31m{[39m
+[31m  err: AggregateError [ECONNREFUSED]: [39m
+[31m      at F:\library-devops\backend\node_modules\pg-pool\index.js:45:11[39m
+[31m      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at async query (F:\library-devops\backend\src\config\database.js:74:18)[39m
+[31m      at async exports.login (F:\library-devops\backend\src\controllers\auth.controller.js:60:20) {[39m
+[31m    code: 'ECONNREFUSED',[39m
+[31m    [errors]: [ [Error], [Error] ][39m
+[31m  },[39m
+[31m  url: '/api/v1/auth/login',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-05-30T05:00:00.240Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:00:00 +0000] "POST /api/v1/auth/login HTTP/1.1" 500 436 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:00:00.693Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T05:00:02.666Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T05:00:04.683Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T05:00:06.690Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T05:00:08.732Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T05:00:10.755Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T05:00:12.784Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T05:00:14.800Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T05:00:16.816Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T05:00:18.819Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T05:03:11.228Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:11 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 634 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:11.288Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:11 +0000] "GET /api/v1/dashboard/admin HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:11.312Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:11 +0000] "GET /api/v1/dashboard/admin HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:15.390Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:15 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:15.392Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:15 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:15.399Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:15 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:15.405Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:15 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:16.068Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:16 +0000] "GET /api/v1/borrows?status= HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:16.072Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:16 +0000] "GET /api/v1/borrows?status= HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:16.501Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:16 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:16.502Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:16 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:16.508Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:16 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:16.509Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:16 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:17.272Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:17 +0000] "GET /api/v1/borrows?status= HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:17.277Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:17 +0000] "GET /api/v1/borrows?status= HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:18.786Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:18 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:18.790Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:18 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:18.797Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:18 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:18.799Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:18 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:19.342Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:19 +0000] "GET /api/v1/borrows?status= HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:19.347Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:19 +0000] "GET /api/v1/borrows?status= HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:21.154Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:21 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:21.155Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:21 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:21.161Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:21 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:03:21.163Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:03:21 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:05:24.724Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:05:24 +0000] "POST /api/v1/books HTTP/1.1" 409 551 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:06:52.595Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:06:52 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 637 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:06:52.645Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:06:52 +0000] "GET /api/v1/dashboard/admin HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:06:52.665Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:06:52 +0000] "GET /api/v1/dashboard/admin HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:06:58.442Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:06:58 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 200 570 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:06:58.445Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:06:58 +0000] "GET /api/v1/categories HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:06:58.448Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:06:58 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:06:58.449Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:06:58 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:07:13.633Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:07:13 +0000] "POST /api/v1/books HTTP/1.1" 409 551 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:07:45.011Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:07:45 +0000] "POST /api/v1/books HTTP/1.1" 201 405 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:07:45.039Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:07:45 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 200 995 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:07:45.042Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:07:45 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:09:41.096Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T05:09:41.108Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T05:09:41.118Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-05-30T05:09:43.041Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T05:09:43.048Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T05:09:43.060Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-05-30T05:09:51.932Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:09:51 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:09:51.933Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:09:51 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:09:52.371Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:09:52 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:09:52.373Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:09:52 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 200 995 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:09:54.507Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:09:54 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:09:54.508Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:09:54 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:09:55.360Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:09:55 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:09:55.361Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:09:55 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:10:04.735Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:10:04 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:10:04.739Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:10:04 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:10:05.365Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:10:05 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:10:05.368Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:10:05 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:10:06.521Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:10:06 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:10:06.524Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:10:06 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:10:07.354Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:10:07 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:10:07.355Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:10:07 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:10:08.622Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:10:08 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:10:08.623Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:10:08 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:10:08.630Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:10:08 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:10:08.632Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:10:08 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:10:24.837Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:10:24 +0000] "POST /api/v1/books HTTP/1.1" 201 504 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:10:26.853Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:10:26 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:10:26.864Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:10:26 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.0 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T05:10:55.189Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:10:55 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:10:55.203Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:10:55 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:10:55.209Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:10:55 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:10:55.227Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:10:55 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:11:37.529Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:11:37 +0000] "POST /api/v1/books HTTP/1.1" 201 499 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:11:39.574Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:11:39 +0000] "GET /api/v1/categories HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:11:39.578Z [[32minfo[39m]: [32m::1 - - [30/May/2026:05:11:39 +0000] "GET /api/v1/books?search=&category_id=&page=1&limit=15 HTTP/1.1" 200 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"[39m 
+2026-05-30T05:13:16.768Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T05:13:16.774Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T05:13:16.780Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-05-30T05:23:12.129Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T05:23:12.133Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T05:25:59.834Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T05:25:59.839Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T05:26:46.841Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T05:26:46.846Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T05:27:35.553Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T05:27:35.558Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T05:28:33.678Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T05:28:33.682Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T05:28:59.877Z [[32minfo[39m]: [32mPostgreSQL connected using fallback host localhost[39m 
+2026-05-30T05:29:02.567Z [[33mwarn[39m]: [33mUnable to resolve Redis host redis[39m 
+2026-05-30T05:29:05.269Z [[31merror[39m]: [31mRedis error: getaddrinfo ENOTFOUND redis[39m {"errno":-3008,"code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"redis","stack":"Error: getaddrinfo ENOTFOUND redis\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)"}
+2026-05-30T05:29:08.024Z [[31merror[39m]: [31mRedis error: getaddrinfo ENOTFOUND redis[39m {"errno":-3008,"code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"redis","stack":"Error: getaddrinfo ENOTFOUND redis\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)"}
+2026-05-30T05:29:10.823Z [[31merror[39m]: [31mRedis error: getaddrinfo ENOTFOUND redis[39m {"errno":-3008,"code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"redis","stack":"Error: getaddrinfo ENOTFOUND redis\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)"}
+2026-05-30T05:29:13.658Z [[31merror[39m]: [31mRedis error: getaddrinfo ENOTFOUND redis[39m {"errno":-3008,"code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"redis","stack":"Error: getaddrinfo ENOTFOUND redis\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)"}
+2026-05-30T05:29:16.571Z [[31merror[39m]: [31mRedis error: getaddrinfo ENOTFOUND redis[39m {"errno":-3008,"code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"redis","stack":"Error: getaddrinfo ENOTFOUND redis\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)"}
+2026-05-30T05:29:19.519Z [[31merror[39m]: [31mRedis error: getaddrinfo ENOTFOUND redis[39m {"errno":-3008,"code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"redis","stack":"Error: getaddrinfo ENOTFOUND redis\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)"}
+2026-05-30T05:29:22.521Z [[31merror[39m]: [31mRedis error: getaddrinfo ENOTFOUND redis[39m {"errno":-3008,"code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"redis","stack":"Error: getaddrinfo ENOTFOUND redis\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)"}
+2026-05-30T05:29:25.568Z [[31merror[39m]: [31mRedis error: getaddrinfo ENOTFOUND redis[39m {"errno":-3008,"code":"ENOTFOUND","syscall":"getaddrinfo","hostname":"redis","stack":"Error: getaddrinfo ENOTFOUND redis\n    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)"}
+2026-05-30T05:29:30.800Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T05:29:30.806Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T05:30:50.293Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T05:30:50.299Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T05:37:47.254Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T05:37:47.260Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T05:37:57.260Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T05:37:57.266Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T05:44:41.026Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T05:44:41.034Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T05:45:56.617Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T05:45:56.623Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T05:46:08.848Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T05:46:08.853Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T05:47:35.374Z [[31merror[39m]: [31mFailed to start:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at F:\\library-devops\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async connectDB (F:\\library-devops\\backend\\src\\config\\database.js:34:20)\n    at async start (F:\\library-devops\\backend\\src\\server.js:58:5)"}
+2026-05-30T05:48:37.438Z [[31merror[39m]: [31mFailed to start:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at F:\\library-devops\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async connectDB (F:\\library-devops\\backend\\src\\config\\database.js:34:20)\n    at async start (F:\\library-devops\\backend\\src\\server.js:58:5)"}
+2026-05-30T05:48:53.176Z [[31merror[39m]: [31mFailed to start:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at F:\\library-devops\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async connectDB (F:\\library-devops\\backend\\src\\config\\database.js:34:20)\n    at async start (F:\\library-devops\\backend\\src\\server.js:58:5)"}
+2026-05-30T04:59:22.836Z [[31merror[39m]: [31mRedis error: read ECONNRESET[39m {"errno":-4077,"code":"ECONNRESET","syscall":"read","stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)"}
+2026-05-30T05:54:37.312Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T05:54:37.417Z [[31merror[39m]: [31mRedis error:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at internalConnectMultiple (node:net:1193:18)\n    at afterConnectMultiple (node:net:1783:7)"}
+2026-05-30T05:54:37.999Z [[31merror[39m]: [31mFailed to start:[39m {"code":"ECONNREFUSED","stack":"AggregateError [ECONNREFUSED]: \n    at F:\\library-devops\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async connectDB (F:\\library-devops\\backend\\src\\config\\database.js:34:20)\n    at async start (F:\\library-devops\\backend\\src\\server.js:58:5)"}
+2026-05-30T06:06:46.653Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T06:06:46.658Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T06:16:55.440Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T06:16:55.444Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T06:16:55.450Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-05-30T06:18:39.052Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T06:18:39.056Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T06:18:39.063Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-05-30T06:18:40.410Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:18:40 +0000] "GET /api/docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:18:40.477Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:18:40 +0000] "GET /api/docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:18:40.478Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:18:40 +0000] "GET /api/docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:18:40.479Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:18:40 +0000] "GET /api/docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:18:40.482Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:18:40 +0000] "GET /api/docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:26:44.174Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T06:26:44.179Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T06:26:44.185Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-05-30T06:26:46.253Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:26:46 +0000] "GET /api/docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:26:46.309Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:26:46 +0000] "GET /api/docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:26:46.312Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:26:46 +0000] "GET /api/docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:26:46.315Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:26:46 +0000] "GET /api/docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:26:46.322Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:26:46 +0000] "GET /api/docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:26:46.379Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:26:46 +0000] "GET /api/docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:27:01.872Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T06:27:01.877Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T06:27:01.883Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-05-30T06:27:11.332Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T06:27:11.337Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T06:27:11.343Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-05-30T06:27:15.306Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:27:15 +0000] "GET /api/docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:27:15.376Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:27:15 +0000] "GET /api/docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:27:15.379Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:27:15 +0000] "GET /api/docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:27:15.380Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:27:15 +0000] "GET /api/docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:27:15.387Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:27:15 +0000] "GET /api/docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:27:23.894Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:27:23 +0000] "GET /api/docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:27:23.957Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:27:23 +0000] "GET /api/docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:27:23.958Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:27:23 +0000] "GET /api/docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:27:23.959Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:27:23 +0000] "GET /api/docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:27:23.965Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:27:23 +0000] "GET /api/docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:27:24.020Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:27:24 +0000] "GET /api/docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:39:19.886Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T06:39:19.891Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T06:39:19.897Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-05-30T06:39:33.503Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:39:33 +0000] "GET /api/docs/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:39:33.567Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:39:33 +0000] "GET /api/docs/swagger-ui.css HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:39:33.570Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:39:33 +0000] "GET /api/docs/swagger-ui-standalone-preset.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:39:33.571Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:39:33 +0000] "GET /api/docs/swagger-ui-bundle.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T06:39:33.576Z [[32minfo[39m]: [32m::1 - - [30/May/2026:06:39:33 +0000] "GET /api/docs/swagger-ui-init.js HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.122.1 Chrome/142.0.7444.265 Electron/39.8.8 Safari/537.36"[39m 
+2026-05-30T08:22:10.439Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T08:22:10.445Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T08:22:10.451Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-05-30T08:22:13.095Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T08:22:13.100Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T08:22:13.107Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-05-30T08:22:33.012Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T08:22:33.018Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T08:23:09.513Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-05-30T08:23:09.518Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-05-30T08:23:09.524Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-01T04:11:51.981Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-01T04:11:51.986Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-01T04:11:51.996Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T08:02:32.517Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T08:02:32.523Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T08:02:32.545Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T08:59:54.301Z [[31merror[39m]: [31mFailed to start: password authentication failed for user "postgres"[39m {"length":104,"name":"error","severity":"FATAL","code":"28P01","file":"auth.c","line":"334","routine":"auth_failed","stack":"error: password authentication failed for user \"postgres\"\n    at F:\\library-devops\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async connectDB (F:\\library-devops\\backend\\src\\config\\database.js:34:20)\n    at async start (F:\\library-devops\\backend\\src\\server.js:11:5)"}
+2026-06-03T09:01:32.382Z [[31merror[39m]: [31mFailed to start: password authentication failed for user "postgres"[39m {"length":104,"name":"error","severity":"FATAL","code":"28P01","file":"auth.c","line":"334","routine":"auth_failed","stack":"error: password authentication failed for user \"postgres\"\n    at F:\\library-devops\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async connectDB (F:\\library-devops\\backend\\src\\config\\database.js:34:20)\n    at async start (F:\\library-devops\\backend\\src\\server.js:11:5)"}
+2026-06-03T09:05:33.060Z [[31merror[39m]: [31mFailed to start: password authentication failed for user "postgres"[39m {"length":104,"name":"error","severity":"FATAL","code":"28P01","file":"auth.c","line":"334","routine":"auth_failed","stack":"error: password authentication failed for user \"postgres\"\n    at F:\\library-devops\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async connectDB (F:\\library-devops\\backend\\src\\config\\database.js:34:20)\n    at async start (F:\\library-devops\\backend\\src\\server.js:11:5)"}
+2026-06-03T09:06:38.999Z [[31merror[39m]: [31mFailed to start: password authentication failed for user "postgres"[39m {"length":104,"name":"error","severity":"FATAL","code":"28P01","file":"auth.c","line":"334","routine":"auth_failed","stack":"error: password authentication failed for user \"postgres\"\n    at F:\\library-devops\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async connectDB (F:\\library-devops\\backend\\src\\config\\database.js:34:20)\n    at async start (F:\\library-devops\\backend\\src\\server.js:11:5)"}
+2026-06-03T09:07:38.507Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:07:38.507Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:07:38.513Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:07:38.513Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:07:38.528Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T09:07:53.834Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:07:53.833Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:07:53.841Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:07:53.842Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:07:53.851Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T09:08:10.518Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:08:10.526Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:10:27.495Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:10:27.502Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:10:27.511Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T09:10:49.334Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:10:49.342Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:11:07.309Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:11:07.315Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:11:46.829Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:11:46.835Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:12:50.642Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:12:50.643Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:12:50.649Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:12:50.648Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:12:50.661Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T09:12:50.658Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:12:50.663Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:12:50.668Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:12:50.671Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:12:50.673Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:12:50.678Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:12:50.684Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-03T09:12:50.685Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:12:50.690Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:12:50.692Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:12:50.694Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:12:50.697Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:12:50.904Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:12:50.909Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:12:50.915Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:12:50.917Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:12:50.918Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:12:50.920Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:12:50.922Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:12:55.594Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:12:55.593Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:12:55.601Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:12:55.602Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:12:55.610Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:12:55.610Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T09:12:55.613Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:12:55.615Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:12:55.616Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:12:55.618Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-03T09:12:55.809Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:12:55.813Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:12:55.815Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:12:55.818Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:12:55.823Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:12:55.825Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:12:55.827Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:12:55.828Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:12:55.830Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:12:55.853Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:12:55.855Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:12:55.857Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:12:55.859Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:12:55.860Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:13:28.017Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:13:28.022Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:13:28.027Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:13:28.029Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:13:28.032Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:13:28.034Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:13:28.036Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:14:31.820Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:14:31.825Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:14:31.833Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T09:15:07.183Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:15:07.190Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:15:07.201Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:15:07.203Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:15:07.206Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:15:07.210Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:15:07.214Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-03T09:31:15.765Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:15.770Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:15.772Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:31:15.778Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:31:15.783Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T09:31:15.787Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:31:15.789Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:15.792Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:31:15.790Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:15.793Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:15.795Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-03T09:31:15.799Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:31:15.808Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:31:15.810Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:15.813Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:31:15.815Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:15.818Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:31:15.992Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:15.999Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:31:16.006Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:31:16.008Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:16.010Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:31:16.011Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:16.013Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:31:18.697Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:18.704Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:31:18.703Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:18.711Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:31:18.714Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T09:31:18.720Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:31:18.723Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:18.725Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:31:18.728Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:18.731Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-03T09:31:18.913Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:18.919Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:31:18.920Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:18.925Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:31:18.927Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:31:18.928Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:18.930Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:31:18.931Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:18.933Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:31:18.933Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:31:18.936Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:18.938Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:31:18.940Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:18.945Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:31:30.467Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:30.467Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:30.472Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:31:30.472Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:31:30.480Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:31:30.480Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T09:31:30.482Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:30.484Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:31:30.485Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:30.487Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-03T09:31:30.641Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:30.647Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:31:30.655Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:31:30.654Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:30.657Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:30.658Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:31:30.659Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:30.660Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:31:30.663Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:31:30.668Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:31:30.672Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:30.677Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:31:30.681Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:31:30.686Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:35:27.816Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:27.817Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:27.823Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:35:27.825Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:35:27.830Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T09:35:27.831Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:35:27.833Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:27.835Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:35:27.836Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:27.838Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-03T09:35:27.988Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:27.990Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:27.994Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:35:27.995Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:35:28.001Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:35:28.002Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:35:28.003Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:28.003Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:28.004Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:35:28.004Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:35:28.005Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:28.005Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:28.007Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:35:28.007Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:35:36.347Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:36.347Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:36.352Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:35:36.353Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:35:36.359Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:35:36.360Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T09:35:36.362Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:36.364Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:35:36.365Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:36.366Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-03T09:35:36.484Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:36.484Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:36.489Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:35:36.489Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:35:36.497Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:35:36.497Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:35:36.499Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:36.499Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:36.501Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:35:36.501Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:35:36.503Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:36.503Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:36.505Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:35:36.505Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:35:41.786Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:41.791Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:41.798Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:35:41.802Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:35:41.809Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T09:35:41.810Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:35:41.812Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:41.814Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:35:41.815Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:41.817Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-03T09:35:41.967Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:41.975Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:35:41.981Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:35:41.983Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:41.984Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:35:41.986Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:41.986Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:41.989Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:35:41.993Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:35:42.007Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:35:42.010Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:42.014Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:35:42.017Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:42.021Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:35:59.442Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:59.442Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:59.447Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:35:59.447Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:35:59.452Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T09:35:59.453Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:35:59.454Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:59.455Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:35:59.456Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:59.458Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-03T09:35:59.638Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:59.645Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:35:59.645Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:59.652Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:35:59.653Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:35:59.655Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:59.657Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:35:59.658Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:59.660Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:35:59.669Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:35:59.675Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:59.678Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:35:59.679Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:35:59.681Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:39:11.215Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:39:11.222Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:39:11.221Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:39:11.222Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:39:11.221Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:39:11.229Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:39:11.230Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:39:11.230Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:39:11.231Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T09:39:11.237Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:39:11.236Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:39:11.238Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:39:11.238Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:39:11.238Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:39:11.239Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:39:11.239Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:39:11.240Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:39:11.241Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:39:11.241Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:39:11.242Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:39:11.241Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:39:11.243Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:39:11.245Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:39:11.244Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-03T09:39:14.208Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:39:14.209Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:39:14.213Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:39:14.213Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:39:14.214Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:39:14.215Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:39:14.220Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:39:14.220Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:39:14.223Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:39:14.224Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T09:39:14.227Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:39:14.224Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:39:14.228Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:39:14.229Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:39:14.230Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:39:14.227Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:39:14.231Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:39:14.228Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:39:14.232Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:39:14.232Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:39:14.233Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:39:14.230Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-03T09:39:14.234Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:39:14.234Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:46:39.246Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:39.246Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:39.251Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:46:39.251Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:46:39.259Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T09:46:39.259Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:46:39.261Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:39.263Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:46:39.264Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:39.266Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-03T09:46:39.448Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:39.448Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:39.453Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:46:39.453Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:46:39.460Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:46:39.461Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:46:39.463Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:39.463Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:39.465Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:46:39.464Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:46:39.466Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:39.465Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:39.466Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:46:39.467Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:46:46.832Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:46.839Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:46:46.842Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:46.846Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T09:46:46.848Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:46:46.855Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:46:46.858Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:46.860Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:46:46.862Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:46.867Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-03T09:46:47.023Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:47.026Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:47.029Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:46:47.032Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:46:47.035Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:46:47.037Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:47.038Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:46:47.040Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:47.039Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:46:47.040Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:47.042Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:46:47.043Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:47.043Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:46:47.045Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:46:52.262Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:52.265Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:52.268Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:46:52.272Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:46:52.277Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T09:46:52.279Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:46:52.280Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:52.283Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:46:52.284Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:52.286Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-03T09:46:52.458Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:52.460Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:52.466Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:46:52.464Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:46:52.471Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:46:52.474Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:46:52.474Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:52.476Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:52.478Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:46:52.476Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:46:52.477Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:52.479Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:52.479Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:46:52.481Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:46:58.151Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:58.153Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:58.158Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:46:58.160Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:46:58.166Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T09:46:58.167Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:46:58.171Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:58.173Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:46:58.175Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:58.178Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-03T09:46:58.376Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:58.379Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:58.385Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:46:58.383Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:46:58.392Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:46:58.390Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:46:58.392Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:58.394Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:58.393Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:46:58.396Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:46:58.395Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:58.398Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:46:58.400Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:46:58.398Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:47:52.725Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:47:52.732Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:47:52.733Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:47:52.740Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:47:52.742Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T09:47:52.747Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:47:52.748Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:47:52.751Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:47:52.753Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:47:52.754Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-03T09:47:52.929Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:47:52.937Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:47:52.943Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:47:52.944Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:47:52.944Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:47:52.946Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:47:52.947Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:47:52.951Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:47:52.950Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:47:52.957Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:47:52.962Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:47:52.966Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:47:52.967Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:47:52.971Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:47:55.144Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:47:55.146Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:47:55.151Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:47:55.153Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:47:55.158Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T09:47:55.161Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:47:55.163Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:47:55.165Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:47:55.166Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:47:55.167Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-03T09:47:55.359Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:47:55.362Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:47:55.364Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:47:55.368Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T09:47:55.371Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:47:55.373Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:47:55.374Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:47:55.374Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T09:47:55.375Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:47:55.375Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:47:55.376Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T09:47:55.377Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T09:47:55.378Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T09:47:55.381Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T10:14:42.981Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T10:14:42.991Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T10:14:43.004Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T10:14:43.007Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T10:14:43.011Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T10:14:43.014Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T10:14:43.018Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T10:15:24.058Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T10:15:24.065Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T10:15:24.075Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T10:15:24.077Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T10:15:24.080Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T10:15:24.081Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T10:15:24.083Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T10:15:54.089Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T10:15:54.095Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T10:15:54.105Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T10:15:54.109Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T10:15:54.111Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T10:15:54.113Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T10:15:54.117Z [[31merror[39m]: [31mFailed to start: listen EADDRINUSE: address already in use :::5002[39m {"code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"::","port":5002,"stack":"Error: listen EADDRINUSE: address already in use :::5002\n    at Server.setupListenHandle [as _listen2] (node:net:2008:16)\n    at listenInCluster (node:net:2065:12)\n    at Server.listen (node:net:2170:7)\n    at app.listen (F:\\library-devops\\backend\\node_modules\\express\\lib\\application.js:635:24)\n    at F:\\library-devops\\backend\\src\\server.js:13:24\n    at new Promise (<anonymous>)\n    at listen (F:\\library-devops\\backend\\src\\server.js:12:10)\n    at start (F:\\library-devops\\backend\\src\\server.js:26:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"}
+2026-06-03T10:20:04.778Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T10:20:04.784Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T10:20:04.798Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T10:43:03.018Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T10:43:03.026Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T10:43:03.062Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T10:51:29.655Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T10:51:29.662Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T10:51:29.676Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T11:01:42.043Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T11:01:42.052Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T11:01:42.078Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T11:02:24.170Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T11:02:24.181Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T11:02:24.194Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T11:02:47.815Z [[31merror[39m]: [31m{[39m
+[31m  err: Error: CORS origin denied: http://localhost:3002[39m
+[31m      at originChecker (F:\library-devops\backend\src\app.js:53:19)[39m
+[31m      at F:\library-devops\backend\node_modules\cors\lib\index.js:219:13[39m
+[31m      at optionsCallback (F:\library-devops\backend\node_modules\cors\lib\index.js:199:9)[39m
+[31m      at corsMiddleware (F:\library-devops\backend\node_modules\cors\lib\index.js:204:7)[39m
+[31m      at newFn (F:\library-devops\backend\node_modules\express-async-errors\index.js:16:20)[39m
+[31m      at Layer.handle [as handle_request] (F:\library-devops\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m      at trim_prefix (F:\library-devops\backend\node_modules\express\lib\router\index.js:328:13)[39m
+[31m      at F:\library-devops\backend\node_modules\express\lib\router\index.js:286:9[39m
+[31m      at router.process_params (F:\library-devops\backend\node_modules\express\lib\router\index.js:346:12)[39m
+[31m      at next (F:\library-devops\backend\node_modules\express\lib\router\index.js:280:10)[39m
+[31m      at internalNext (F:\library-devops\backend\node_modules\helmet\index.cjs:537:6)[39m
+[31m      at xXssProtectionMiddleware (F:\library-devops\backend\node_modules\helmet\index.cjs:315:3)[39m
+[31m      at internalNext (F:\library-devops\backend\node_modules\helmet\index.cjs:535:6)[39m
+[31m      at xPoweredByMiddleware (F:\library-devops\backend\node_modules\helmet\index.cjs:308:3)[39m
+[31m      at internalNext (F:\library-devops\backend\node_modules\helmet\index.cjs:535:6)[39m
+[31m      at xPermittedCrossDomainPoliciesMiddleware (F:\library-devops\backend\node_modules\helmet\index.cjs:301:3),[39m
+[31m  url: '/api/v1/auth/login',[39m
+[31m  method: 'OPTIONS'[39m
+[31m}[39m 
+2026-06-03T11:02:51.586Z [[31merror[39m]: [31m{[39m
+[31m  err: Error: CORS origin denied: http://localhost:3002[39m
+[31m      at originChecker (F:\library-devops\backend\src\app.js:53:19)[39m
+[31m      at F:\library-devops\backend\node_modules\cors\lib\index.js:219:13[39m
+[31m      at optionsCallback (F:\library-devops\backend\node_modules\cors\lib\index.js:199:9)[39m
+[31m      at corsMiddleware (F:\library-devops\backend\node_modules\cors\lib\index.js:204:7)[39m
+[31m      at newFn (F:\library-devops\backend\node_modules\express-async-errors\index.js:16:20)[39m
+[31m      at Layer.handle [as handle_request] (F:\library-devops\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m      at trim_prefix (F:\library-devops\backend\node_modules\express\lib\router\index.js:328:13)[39m
+[31m      at F:\library-devops\backend\node_modules\express\lib\router\index.js:286:9[39m
+[31m      at router.process_params (F:\library-devops\backend\node_modules\express\lib\router\index.js:346:12)[39m
+[31m      at next (F:\library-devops\backend\node_modules\express\lib\router\index.js:280:10)[39m
+[31m      at internalNext (F:\library-devops\backend\node_modules\helmet\index.cjs:537:6)[39m
+[31m      at xXssProtectionMiddleware (F:\library-devops\backend\node_modules\helmet\index.cjs:315:3)[39m
+[31m      at internalNext (F:\library-devops\backend\node_modules\helmet\index.cjs:535:6)[39m
+[31m      at xPoweredByMiddleware (F:\library-devops\backend\node_modules\helmet\index.cjs:308:3)[39m
+[31m      at internalNext (F:\library-devops\backend\node_modules\helmet\index.cjs:535:6)[39m
+[31m      at xPermittedCrossDomainPoliciesMiddleware (F:\library-devops\backend\node_modules\helmet\index.cjs:301:3),[39m
+[31m  url: '/api/v1/auth/login',[39m
+[31m  method: 'OPTIONS'[39m
+[31m}[39m 
+2026-06-03T11:06:59.221Z [[31merror[39m]: [31m{[39m
+[31m  err: Error: CORS origin denied: http://localhost:3002[39m
+[31m      at originChecker (F:\library-devops\backend\src\app.js:53:19)[39m
+[31m      at F:\library-devops\backend\node_modules\cors\lib\index.js:219:13[39m
+[31m      at optionsCallback (F:\library-devops\backend\node_modules\cors\lib\index.js:199:9)[39m
+[31m      at corsMiddleware (F:\library-devops\backend\node_modules\cors\lib\index.js:204:7)[39m
+[31m      at newFn (F:\library-devops\backend\node_modules\express-async-errors\index.js:16:20)[39m
+[31m      at Layer.handle [as handle_request] (F:\library-devops\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m      at trim_prefix (F:\library-devops\backend\node_modules\express\lib\router\index.js:328:13)[39m
+[31m      at F:\library-devops\backend\node_modules\express\lib\router\index.js:286:9[39m
+[31m      at router.process_params (F:\library-devops\backend\node_modules\express\lib\router\index.js:346:12)[39m
+[31m      at next (F:\library-devops\backend\node_modules\express\lib\router\index.js:280:10)[39m
+[31m      at internalNext (F:\library-devops\backend\node_modules\helmet\index.cjs:537:6)[39m
+[31m      at xXssProtectionMiddleware (F:\library-devops\backend\node_modules\helmet\index.cjs:315:3)[39m
+[31m      at internalNext (F:\library-devops\backend\node_modules\helmet\index.cjs:535:6)[39m
+[31m      at xPoweredByMiddleware (F:\library-devops\backend\node_modules\helmet\index.cjs:308:3)[39m
+[31m      at internalNext (F:\library-devops\backend\node_modules\helmet\index.cjs:535:6)[39m
+[31m      at xPermittedCrossDomainPoliciesMiddleware (F:\library-devops\backend\node_modules\helmet\index.cjs:301:3),[39m
+[31m  url: '/api/v1/auth/login',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-03T11:07:07.608Z [[31merror[39m]: [31m{[39m
+[31m  err: Error: CORS origin denied: http://localhost:3002[39m
+[31m      at originChecker (F:\library-devops\backend\src\app.js:53:19)[39m
+[31m      at F:\library-devops\backend\node_modules\cors\lib\index.js:219:13[39m
+[31m      at optionsCallback (F:\library-devops\backend\node_modules\cors\lib\index.js:199:9)[39m
+[31m      at corsMiddleware (F:\library-devops\backend\node_modules\cors\lib\index.js:204:7)[39m
+[31m      at newFn (F:\library-devops\backend\node_modules\express-async-errors\index.js:16:20)[39m
+[31m      at Layer.handle [as handle_request] (F:\library-devops\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m      at trim_prefix (F:\library-devops\backend\node_modules\express\lib\router\index.js:328:13)[39m
+[31m      at F:\library-devops\backend\node_modules\express\lib\router\index.js:286:9[39m
+[31m      at router.process_params (F:\library-devops\backend\node_modules\express\lib\router\index.js:346:12)[39m
+[31m      at next (F:\library-devops\backend\node_modules\express\lib\router\index.js:280:10)[39m
+[31m      at internalNext (F:\library-devops\backend\node_modules\helmet\index.cjs:537:6)[39m
+[31m      at xXssProtectionMiddleware (F:\library-devops\backend\node_modules\helmet\index.cjs:315:3)[39m
+[31m      at internalNext (F:\library-devops\backend\node_modules\helmet\index.cjs:535:6)[39m
+[31m      at xPoweredByMiddleware (F:\library-devops\backend\node_modules\helmet\index.cjs:308:3)[39m
+[31m      at internalNext (F:\library-devops\backend\node_modules\helmet\index.cjs:535:6)[39m
+[31m      at xPermittedCrossDomainPoliciesMiddleware (F:\library-devops\backend\node_modules\helmet\index.cjs:301:3),[39m
+[31m  url: '/api/v1/auth/login',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-03T11:07:31.708Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T11:07:31.716Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T11:07:31.727Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T11:07:51.732Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T11:07:51.741Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T11:07:51.754Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T11:15:58.719Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T11:15:58.738Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T11:15:58.757Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T11:16:17.755Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T11:16:17.766Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T11:16:17.779Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T11:31:29.154Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T11:31:29.159Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T11:31:29.166Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T11:32:26.911Z [[31merror[39m]: [31m{[39m
+[31m  err: error: column "default_loan_days" of relation "books" does not exist[39m
+[31m      at F:\library-devops\backend\node_modules\pg-pool\index.js:45:11[39m
+[31m      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at async query (F:\library-devops\backend\src\config\database.js:74:18)[39m
+[31m      at async exports.updateBook (F:\library-devops\backend\src\controllers\book.controller.js:209:20) {[39m
+[31m    length: 138,[39m
+[31m    severity: 'ERROR',[39m
+[31m    code: '42703',[39m
+[31m    detail: undefined,[39m
+[31m    hint: undefined,[39m
+[31m    position: '192',[39m
+[31m    internalPosition: undefined,[39m
+[31m    internalQuery: undefined,[39m
+[31m    where: undefined,[39m
+[31m    schema: undefined,[39m
+[31m    table: undefined,[39m
+[31m    column: undefined,[39m
+[31m    dataType: undefined,[39m
+[31m    constraint: undefined,[39m
+[31m    file: 'analyze.c',[39m
+[31m    line: '2515',[39m
+[31m    routine: 'transformUpdateTargetList'[39m
+[31m  },[39m
+[31m  url: '/api/v1/books/3d4ac256-73b0-4b93-bd46-a2e142764ceb',[39m
+[31m  method: 'PUT'[39m
+[31m}[39m 
+2026-06-03T11:37:38.391Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T11:37:38.397Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T11:37:38.404Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T11:37:55.096Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T11:37:55.102Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T11:37:55.109Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T11:37:57.298Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T11:37:57.303Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T11:37:57.310Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T11:37:59.446Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T11:37:59.451Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T11:37:59.458Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T11:38:36.751Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T11:38:36.757Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T11:38:36.763Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T11:38:39.428Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T11:38:39.434Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T11:38:39.440Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T11:39:01.312Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T11:39:01.319Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T11:39:01.326Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T11:39:42.182Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T11:39:42.187Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T11:39:42.192Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T11:39:54.010Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T11:39:54.015Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T11:39:54.021Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T11:39:55.988Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T11:39:55.994Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T11:39:56.004Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T11:57:23.013Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T11:57:23.020Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T11:57:23.028Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T11:57:27.655Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T11:57:27.661Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T11:57:27.668Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T12:31:00.090Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T12:31:00.097Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T12:31:00.108Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T12:31:14.888Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T12:31:14.902Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T12:31:14.909Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T12:38:03.423Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T12:38:03.429Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T12:38:03.435Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T12:38:03.436Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T12:38:03.438Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T12:38:03.439Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T12:38:03.442Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-03T12:42:49.218Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T12:42:49.226Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T12:42:49.236Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T12:43:05.797Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T12:43:05.802Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T12:43:05.809Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T12:43:41.412Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T12:43:41.419Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T12:43:41.429Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T12:45:42.495Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T12:45:42.500Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T12:45:42.505Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-03T12:45:42.506Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T12:45:42.508Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-03T12:45:42.509Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T12:45:42.511Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-03T12:53:00.254Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T12:53:00.263Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T12:53:00.275Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T12:55:43.067Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T12:55:43.075Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T12:55:43.083Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T15:13:06.762Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T15:13:06.769Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T15:13:06.776Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T15:17:38.546Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T15:17:38.550Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T15:17:38.555Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T15:25:32.617Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T15:25:32.622Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T15:25:32.629Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T15:26:52.847Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T15:26:52.852Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T15:26:52.859Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T15:26:57.318Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T15:26:57.323Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T15:26:57.328Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T15:27:23.973Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T15:27:23.978Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T15:27:23.986Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T15:27:27.167Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T15:27:27.172Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T15:27:27.177Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T15:27:44.198Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T15:27:44.204Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T15:27:44.212Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T15:28:19.937Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T15:28:19.942Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T15:28:19.947Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T15:38:22.638Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T15:38:22.642Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T15:38:22.649Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T15:41:39.425Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T15:41:39.442Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T15:41:39.450Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T15:41:52.589Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T15:41:52.594Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T15:41:52.602Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T15:43:16.662Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T15:43:16.668Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T15:43:16.673Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T15:46:05.434Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T15:46:05.439Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T15:46:05.444Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T16:10:22.778Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T16:10:22.783Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T16:10:22.788Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T16:14:13.726Z [[32minfo[39m]: [32mRunning migration from F:\library-devops\database\migrations\001_initial_schema.sql[39m 
+2026-06-03T16:14:13.773Z [[32minfo[39m]: [32mDatabase migration completed successfully.[39m 
+2026-06-03T16:14:25.591Z [[32minfo[39m]: [32mPostgreSQL connected[39m 
+2026-06-03T16:14:25.595Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T16:14:25.601Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T16:18:50.699Z [[32minfo[39m]: [32mPostgreSQL connected to localhost[39m 
+2026-06-03T16:18:50.704Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T16:18:50.708Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T16:18:50.710Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T16:20:14.266Z [[32minfo[39m]: [32mRunning migration from F:\library-devops\database\migrations\001_initial_schema.sql[39m 
+2026-06-03T16:20:14.310Z [[32minfo[39m]: [32mDatabase migration completed successfully.[39m 
+2026-06-03T16:23:59.417Z [[32minfo[39m]: [32mPostgreSQL connected to localhost[39m 
+2026-06-03T16:23:59.424Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T16:23:59.429Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T16:23:59.431Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T16:27:49.009Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops\database\migrations[39m 
+2026-06-03T16:27:49.036Z [[32minfo[39m]: [32mApplying migration 001_initial_schema.sql[39m 
+2026-06-03T16:27:49.061Z [[32minfo[39m]: [32mMigration 001_initial_schema.sql applied.[39m 
+2026-06-03T16:27:49.061Z [[32minfo[39m]: [32mApplying migration 002_add_default_loan_days.sql[39m 
+2026-06-03T16:27:49.065Z [[32minfo[39m]: [32mMigration 002_add_default_loan_days.sql applied.[39m 
+2026-06-03T16:27:49.065Z [[32minfo[39m]: [32mAll migrations applied successfully.[39m 
+2026-06-03T16:28:10.664Z [[32minfo[39m]: [32mPostgreSQL connected to localhost[39m 
+2026-06-03T16:28:10.668Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T16:28:10.672Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T16:28:10.674Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-03T16:34:53.929Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops\database\migrations[39m 
+2026-06-03T16:34:53.955Z [[32minfo[39m]: [32mApplying migration 001_initial_schema.sql[39m 
+2026-06-03T16:34:53.970Z [[32minfo[39m]: [32mMigration 001_initial_schema.sql applied.[39m 
+2026-06-03T16:34:53.970Z [[32minfo[39m]: [32mApplying migration 002_add_default_loan_days.sql[39m 
+2026-06-03T16:34:53.973Z [[32minfo[39m]: [32mMigration 002_add_default_loan_days.sql applied.[39m 
+2026-06-03T16:34:53.974Z [[32minfo[39m]: [32mAll migrations applied successfully.[39m 
+2026-06-03T16:34:53.986Z [[32minfo[39m]: [32mPostgreSQL connected to localhost[39m 
+2026-06-03T16:34:53.990Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T16:34:53.995Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-03T16:34:53.997Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-04T09:51:06.054Z [[32minfo[39m]: [32mRunning migrations from F:\Backup\library-devops_7_4_26\library-devops\database\migrations[39m 
+2026-06-04T09:51:06.087Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-04T09:51:06.101Z [[32minfo[39m]: [32mPostgreSQL connected to localhost[39m 
+2026-06-04T09:51:06.106Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-04T09:51:06.113Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-04T09:51:06.115Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-04T09:51:07.680Z [[32minfo[39m]: [32mRunning migrations from F:\Backup\library-devops_7_4_26\library-devops\database\migrations[39m 
+2026-06-04T09:51:07.712Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-04T09:51:07.724Z [[32minfo[39m]: [32mPostgreSQL connected to localhost[39m 
+2026-06-04T09:51:07.729Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-04T09:51:07.734Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-04T09:51:07.737Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-04T09:51:34.303Z [[32minfo[39m]: [32mRunning migrations from F:\Backup\library-devops_7_4_26\library-devops\database\migrations[39m 
+2026-06-04T09:51:34.333Z [[33mwarn[39m]: [33mUnable to connect to DB host localhost: password authentication failed for user "postgres"[39m 
+2026-06-05T02:42:22.472Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops\database\migrations[39m 
+2026-06-05T02:42:22.503Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-05T02:42:22.512Z [[32minfo[39m]: [32mPostgreSQL connected to localhost[39m 
+2026-06-05T02:42:22.515Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-05T02:42:22.519Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-05T02:42:22.520Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 

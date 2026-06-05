@@ -1,0 +1,8 @@
+2026-06-03T11:33:44.779Z [[32minfo[39m]: [32mRunning migration from F:\library-devops\database\migrations\001_initial_schema.sql[39m 
+2026-06-03T11:33:44.852Z [[32minfo[39m]: [32mDatabase migration completed successfully.[39m 
+2026-06-03T16:52:28.510Z [[32minfo[39m]: [32mRunning migrations from f:\library-devops\database\migrations[39m 
+2026-06-03T16:52:28.553Z [[32minfo[39m]: [32mApplying migration 001_initial_schema.sql[39m 
+2026-06-03T16:52:28.568Z [[32minfo[39m]: [32mMigration 001_initial_schema.sql applied.[39m 
+2026-06-03T16:52:28.568Z [[32minfo[39m]: [32mApplying migration 002_add_default_loan_days.sql[39m 
+2026-06-03T16:52:28.573Z [[32minfo[39m]: [32mMigration 002_add_default_loan_days.sql applied.[39m 
+2026-06-03T16:52:28.573Z [[32minfo[39m]: [32mAll pending migrations applied successfully.[39m 

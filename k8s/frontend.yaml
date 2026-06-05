@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: obito-store-frontend-blue
+  namespace: obito-store
+  labels:
+    app: obito-store-frontend
+    color: blue
+spec:
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  selector:
+    matchLabels:
+      app: obito-store-frontend
+      color: blue
+  template:
+    metadata:
+      labels:
+        app: obito-store-frontend
+        color: blue
+    spec:
+      containers:
+        - name: frontend
+          image: ghcr.io/yourorg/library-devops-frontend:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000
+          env:
+            - name: VITE_API_URL
+              value: /api/v1
+            - name: NODE_ENV
+              value: production
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend
+  namespace: obito-store
+spec:
+  selector:
+    app: obito-store-frontend
+    color: blue
+  ports:
+    - port: 3000
+      targetPort: 3000
+      protocol: TCP
+  type: ClusterIP
