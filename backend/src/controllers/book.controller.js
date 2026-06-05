@@ -116,6 +116,11 @@ exports.createBook = async (req, res) => {
   const sanitizedPublishYear = parseOptionalInt(publish_year);
   const sanitizedTotalCopies = parseOptionalPositiveInt(total_copies, 1) ?? 1;
   const sanitizedPages = parseOptionalInt(pages);
+  const sanitizedTags = Array.isArray(tags)
+    ? tags.map((tag) => typeof tag === 'string' ? tag.trim() : tag).filter(Boolean)
+    : typeof tags === 'string'
+      ? tags.split(',').map((tag) => tag.trim()).filter(Boolean)
+      : null;
   const sanitizedDefaultLoanDays = default_loan_days === undefined || default_loan_days === ''
     ? null
     : parseOptionalPositiveInt(default_loan_days, 1);
