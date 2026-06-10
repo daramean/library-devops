@@ -1,4 +1,4 @@
-# 📚 OBITO STORE — Library Management System
+# OBITO STORE — Library Management System
 
 A full-stack, production-grade Library Management System built for DevOps workflows.
 
