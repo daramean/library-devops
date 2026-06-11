@@ -101,10 +101,9 @@ jobs:
           export KUBECONFIG=$PWD/kubeconfig
 
       - name: Apply kustomize
-        run: |
-          kubectl apply -k k8s
+        run: kubectl apply -k k8s
 
-      - name: Deploy production backend blue/green release
+      - name: Deploy production backend blue/green
         run: |
           set -euo pipefail
           ACTIVE_COLOR=$(kubectl -n obito-store get service backend -o jsonpath='{.spec.selector.color}')
@@ -114,55 +113,11 @@ jobs:
             NEXT_COLOR=blue
           fi
           echo "Active backend color=$ACTIVE_COLOR, deploying next=$NEXT_COLOR"
-          cat <<EOF | kubectl -n obito-store apply -f -
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: obito-store-backend-${NEXT_COLOR}
-  namespace: obito-store
-  labels:
-    app: obito-store-backend
-    color: ${NEXT_COLOR}
-spec:
-  replicas: 2
-  strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxUnavailable: 1
-      maxSurge: 1
-  selector:
-    matchLabels:
-      app: obito-store-backend
-      color: ${NEXT_COLOR}
-  template:
-    metadata:
-      labels:
-        app: obito-store-backend
-        color: ${NEXT_COLOR}
-    spec:
-      containers:
-        - name: backend
-          image: ghcr.io/${{ github.repository_owner }}/library-devops-backend:${{ needs.build_and_push.outputs.image-tag }}
-          imagePullPolicy: IfNotPresent
-          ports:
-            - containerPort: 5000
-          envFrom:
-            - secretRef:
-                name: obito-store-secrets
-          env:
-            - name: DB_HOST
-              value: postgres
-            - name: REDIS_HOST
-              value: redis
-            - name: NODE_ENV
-              value: production
-            - name: PORT
-              value: "5000"
-EOF
+          kubectl -n obito-store set image deployment/obito-store-backend-${NEXT_COLOR} backend=ghcr.io/${{ github.repository_owner }}/library-devops-backend:${{ needs.build_and_push.outputs.image-tag }} --record
           kubectl -n obito-store rollout status deployment/obito-store-backend-${NEXT_COLOR} --timeout=180s
           kubectl -n obito-store patch service backend -p '{"spec":{"selector":{"app":"obito-store-backend","color":"'${NEXT_COLOR}'"}}}'
 
-      - name: Deploy production frontend blue/green release
+      - name: Deploy production frontend blue/green
         run: |
           set -euo pipefail
           ACTIVE_COLOR=$(kubectl -n obito-store get service frontend -o jsonpath='{.spec.selector.color}')
@@ -172,43 +127,6 @@ EOF
             NEXT_COLOR=blue
           fi
           echo "Active frontend color=$ACTIVE_COLOR, deploying next=$NEXT_COLOR"
-          cat <<EOF | kubectl -n obito-store apply -f -
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: obito-store-frontend-${NEXT_COLOR}
-  namespace: obito-store
-  labels:
-    app: obito-store-frontend
-    color: ${NEXT_COLOR}
-spec:
-  replicas: 2
-  strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxUnavailable: 1
-      maxSurge: 1
-  selector:
-    matchLabels:
-      app: obito-store-frontend
-      color: ${NEXT_COLOR}
-  template:
-    metadata:
-      labels:
-        app: obito-store-frontend
-        color: ${NEXT_COLOR}
-    spec:
-      containers:
-        - name: frontend
-          image: ghcr.io/${{ github.repository_owner }}/library-devops-frontend:${{ needs.build_and_push.outputs.image-tag }}
-          imagePullPolicy: IfNotPresent
-          ports:
-            - containerPort: 3000
-          env:
-            - name: VITE_API_URL
-              value: /api/v1
-            - name: NODE_ENV
-              value: production
-EOF
+          kubectl -n obito-store set image deployment/obito-store-frontend-${NEXT_COLOR} frontend=ghcr.io/${{ github.repository_owner }}/library-devops-frontend:${{ needs.build_and_push.outputs.image-tag }} --record
           kubectl -n obito-store rollout status deployment/obito-store-frontend-${NEXT_COLOR} --timeout=180s
           kubectl -n obito-store patch service frontend -p '{"spec":{"selector":{"app":"obito-store-frontend","color":"'${NEXT_COLOR}'"}}}'
