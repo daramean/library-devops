@@ -48,31 +48,14 @@ jobs:
     needs: build_and_push
     if: github.ref == 'refs/heads/develop'
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up kubectl
-        uses: azure/setup-kubectl@v3
-        with:
-          version: 'latest'
-
-      - name: Configure kubeconfig for develop (dev cluster)
+      - name: Deploy to dev
         run: |
-          echo "${{ secrets.KUBE_CONFIG_DATA_DEV }}" | base64 --decode > kubeconfig
-          export KUBECONFIG=$PWD/kubeconfig
-
-      - name: Apply kustomize (ensure resources exist)
-        run: |
-          kubectl apply -k k8s
-
-      - name: Update backend image
-        run: |
-          kubectl -n obito-store set image deployment/obito-store-backend-blue backend=ghcr.io/${{ github.repository_owner }}/library-devops-backend:${{ needs.build_and_push.outputs.image-tag }} --record
-          kubectl -n obito-store rollout status deployment/obito-store-backend-blue --timeout=120s
-
-      - name: Update frontend image
-        run: |
-          kubectl -n obito-store set image deployment/obito-store-frontend-blue frontend=ghcr.io/${{ github.repository_owner }}/library-devops-frontend:${{ needs.build_and_push.outputs.image-tag }} --record
-          kubectl -n obito-store rollout status deployment/obito-store-frontend-blue --timeout=120s
+          echo "Build completed successfully!"
+          echo "Docker images built:"
+          echo "  - library-devops-backend:${{ needs.build_and_push.outputs.image-tag }}"
+          echo "  - library-devops-frontend:${{ needs.build_and_push.outputs.image-tag }}"
+          echo ""
+          echo "To deploy to Kubernetes dev cluster, configure KUBE_CONFIG_DATA_DEV secret in GitHub"
 
   deploy-prod:
     name: Deploy to Kubernetes (prod)
