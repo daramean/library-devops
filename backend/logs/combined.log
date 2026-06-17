@@ -1075,3 +1075,9 @@
 2026-06-05T02:42:22.515Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
 2026-06-05T02:42:22.519Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
 2026-06-05T02:42:22.520Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-16T08:55:16.008Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-16T08:55:16.050Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-16T08:55:16.059Z [[32minfo[39m]: [32mPostgreSQL connected to localhost[39m 
+2026-06-16T08:55:16.062Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-16T08:55:16.069Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-16T08:55:16.072Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
