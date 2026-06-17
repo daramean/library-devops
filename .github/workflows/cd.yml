@@ -11,6 +11,10 @@ jobs:
   build_and_push:
     name: Build and Push Images
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
     outputs:
       image-tag: ${{ env.IMAGE_TAG }}
     steps:
