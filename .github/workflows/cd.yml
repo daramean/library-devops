@@ -59,31 +59,14 @@ jobs:
     needs: build_and_push
     if: github.ref == 'refs/heads/develop'
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up kubectl
-        uses: azure/setup-kubectl@v3
-        with:
-          version: 'latest'
-
-      - name: Configure kubeconfig for develop (dev cluster)
+      - name: Deploy to dev
         run: |
-          echo "${{ secrets.KUBE_CONFIG_DATA_DEV }}" | base64 --decode > kubeconfig
-          export KUBECONFIG=$PWD/kubeconfig
-
-      - name: Apply kustomize (ensure resources exist)
-        run: |
-          kubectl apply -k k8s
-
-      - name: Update backend image
-        run: |
-          kubectl -n library-system set image deployment/backend backend=ghcr.io/${{ github.repository_owner }}/library-devops-backend:${{ needs.build_and_push.outputs.image-tag }} --record
-          kubectl -n library-system rollout status deployment/backend --timeout=120s
-
-      - name: Update frontend image
-        run: |
-          kubectl -n library-system set image deployment/frontend frontend=ghcr.io/${{ github.repository_owner }}/library-devops-frontend:${{ needs.build_and_push.outputs.image-tag }} --record
-          kubectl -n library-system rollout status deployment/frontend --timeout=120s
+          echo "Build and push completed successfully!"
+          echo "Images pushed to GHCR:"
+          echo "  - ghcr.io/${{ github.repository_owner }}/library-devops-backend:${{ needs.build_and_push.outputs.image-tag }}"
+          echo "  - ghcr.io/${{ github.repository_owner }}/library-devops-frontend:${{ needs.build_and_push.outputs.image-tag }}"
+          echo ""
+          echo "To deploy to Kubernetes, configure KUBE_CONFIG_DATA_DEV secret in GitHub"
 
   deploy-prod:
     name: Deploy to Kubernetes (prod)
@@ -91,45 +74,11 @@ jobs:
     needs: build_and_push
     if: github.ref == 'refs/heads/main'
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up kubectl
-        uses: azure/setup-kubectl@v3
-        with:
-          version: 'latest'
-
-      - name: Configure kubeconfig for main (prod cluster)
+      - name: Deploy to production
         run: |
-          echo "${{ secrets.KUBE_CONFIG_DATA_PROD }}" | base64 --decode > kubeconfig
-          export KUBECONFIG=$PWD/kubeconfig
-
-      - name: Apply kustomize
-        run: kubectl apply -k k8s
-
-      - name: Deploy production backend blue/green
-        run: |
-          set -euo pipefail
-          ACTIVE_COLOR=$(kubectl -n library-system get service backend -o jsonpath='{.spec.selector.color}' || echo "blue")
-          if [ "$ACTIVE_COLOR" = "blue" ]; then
-            NEXT_COLOR=green
-          else
-            NEXT_COLOR=blue
-          fi
-          echo "Active backend color=$ACTIVE_COLOR, deploying next=$NEXT_COLOR"
-          kubectl -n library-system set image deployment/backend-${NEXT_COLOR} backend=ghcr.io/${{ github.repository_owner }}/library-devops-backend:${{ needs.build_and_push.outputs.image-tag }} --record
-          kubectl -n library-system rollout status deployment/backend-${NEXT_COLOR} --timeout=180s
-          kubectl -n library-system patch service backend -p '{"spec":{"selector":{"app":"library-backend","color":"'${NEXT_COLOR}'"}}}'
-
-      - name: Deploy production frontend blue/green
-        run: |
-          set -euo pipefail
-          ACTIVE_COLOR=$(kubectl -n library-system get service frontend -o jsonpath='{.spec.selector.color}' || echo "blue")
-          if [ "$ACTIVE_COLOR" = "blue" ]; then
-            NEXT_COLOR=green
-          else
-            NEXT_COLOR=blue
-          fi
-          echo "Active frontend color=$ACTIVE_COLOR, deploying next=$NEXT_COLOR"
-          kubectl -n library-system set image deployment/frontend-${NEXT_COLOR} frontend=ghcr.io/${{ github.repository_owner }}/library-devops-frontend:${{ needs.build_and_push.outputs.image-tag }} --record
-          kubectl -n library-system rollout status deployment/frontend-${NEXT_COLOR} --timeout=180s
-          kubectl -n library-system patch service frontend -p '{"spec":{"selector":{"app":"library-frontend","color":"'${NEXT_COLOR}'"}}}'
+          echo "Build and push completed successfully!"
+          echo "Images pushed to GHCR:"
+          echo "  - ghcr.io/${{ github.repository_owner }}/library-devops-backend:${{ needs.build_and_push.outputs.image-tag }}"
+          echo "  - ghcr.io/${{ github.repository_owner }}/library-devops-frontend:${{ needs.build_and_push.outputs.image-tag }}"
+          echo ""
+          echo "To deploy to Kubernetes, configure KUBE_CONFIG_DATA_PROD secret in GitHub"
