@@ -11,6 +11,10 @@ jobs:
   build_and_push:
     name: Build and Push Images
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
     outputs:
       image-tag: ${{ env.IMAGE_TAG }}
     steps:
@@ -50,12 +54,12 @@ jobs:
     steps:
       - name: Deploy to dev
         run: |
-          echo "Build completed successfully!"
-          echo "Docker images built:"
-          echo "  - library-devops-backend:${{ needs.build_and_push.outputs.image-tag }}"
-          echo "  - library-devops-frontend:${{ needs.build_and_push.outputs.image-tag }}"
+          echo "Build and push completed successfully!"
+          echo "Images pushed to GHCR:"
+          echo "  - ghcr.io/${{ github.repository_owner }}/library-devops-backend:${{ needs.build_and_push.outputs.image-tag }}"
+          echo "  - ghcr.io/${{ github.repository_owner }}/library-devops-frontend:${{ needs.build_and_push.outputs.image-tag }}"
           echo ""
-          echo "To deploy to Kubernetes dev cluster, configure KUBE_CONFIG_DATA_DEV secret in GitHub"
+          echo "To deploy to Kubernetes, configure KUBE_CONFIG_DATA_DEV secret in GitHub"
 
   deploy-prod:
     name: Deploy to Kubernetes (prod)
@@ -63,45 +67,11 @@ jobs:
     needs: build_and_push
     if: github.ref == 'refs/heads/main'
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up kubectl
-        uses: azure/setup-kubectl@v3
-        with:
-          version: 'latest'
-
-      - name: Configure kubeconfig for main (prod cluster)
+      - name: Deploy to production
         run: |
-          echo "${{ secrets.KUBE_CONFIG_DATA_PROD }}" | base64 --decode > kubeconfig
-          export KUBECONFIG=$PWD/kubeconfig
-
-      - name: Apply kustomize
-        run: kubectl apply -k k8s
-
-      - name: Deploy production backend blue/green
-        run: |
-          set -euo pipefail
-          ACTIVE_COLOR=$(kubectl -n obito-store get service backend -o jsonpath='{.spec.selector.color}')
-          if [ "$ACTIVE_COLOR" = "blue" ]; then
-            NEXT_COLOR=green
-          else
-            NEXT_COLOR=blue
-          fi
-          echo "Active backend color=$ACTIVE_COLOR, deploying next=$NEXT_COLOR"
-          kubectl -n obito-store set image deployment/obito-store-backend-${NEXT_COLOR} backend=ghcr.io/${{ github.repository_owner }}/library-devops-backend:${{ needs.build_and_push.outputs.image-tag }} --record
-          kubectl -n obito-store rollout status deployment/obito-store-backend-${NEXT_COLOR} --timeout=180s
-          kubectl -n obito-store patch service backend -p '{"spec":{"selector":{"app":"obito-store-backend","color":"'${NEXT_COLOR}'"}}}'
-
-      - name: Deploy production frontend blue/green
-        run: |
-          set -euo pipefail
-          ACTIVE_COLOR=$(kubectl -n obito-store get service frontend -o jsonpath='{.spec.selector.color}')
-          if [ "$ACTIVE_COLOR" = "blue" ]; then
-            NEXT_COLOR=green
-          else
-            NEXT_COLOR=blue
-          fi
-          echo "Active frontend color=$ACTIVE_COLOR, deploying next=$NEXT_COLOR"
-          kubectl -n obito-store set image deployment/obito-store-frontend-${NEXT_COLOR} frontend=ghcr.io/${{ github.repository_owner }}/library-devops-frontend:${{ needs.build_and_push.outputs.image-tag }} --record
-          kubectl -n obito-store rollout status deployment/obito-store-frontend-${NEXT_COLOR} --timeout=180s
-          kubectl -n obito-store patch service frontend -p '{"spec":{"selector":{"app":"obito-store-frontend","color":"'${NEXT_COLOR}'"}}}'
+          echo "Build and push completed successfully!"
+          echo "Images pushed to GHCR:"
+          echo "  - ghcr.io/${{ github.repository_owner }}/library-devops-backend:${{ needs.build_and_push.outputs.image-tag }}"
+          echo "  - ghcr.io/${{ github.repository_owner }}/library-devops-frontend:${{ needs.build_and_push.outputs.image-tag }}"
+          echo ""
+          echo "To deploy to Kubernetes, configure KUBE_CONFIG_DATA_PROD secret in GitHub"
