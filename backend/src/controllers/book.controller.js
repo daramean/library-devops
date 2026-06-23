@@ -261,6 +261,13 @@ exports.updateBook = async (req, res) => {
     }
   }
 
+  // If total_copies was updated, also recalculate available_copies
+  if (req.body.total_copies !== undefined && req.body.total_copies !== '') {
+    fields.push(`available_copies = GREATEST(0, (SELECT $${idx}::INTEGER - COUNT(*) FROM borrow_records WHERE book_id = $${idx + 1} AND returned_at IS NULL))`);
+    values.push(req.body.total_copies, req.params.id);
+    idx += 2;
+  }
+
   values.push(req.params.id);
   const { rows } = await query(
     `UPDATE books SET ${fields.join(', ')} WHERE id = $${idx} AND is_active = TRUE RETURNING *`,

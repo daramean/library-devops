@@ -22,6 +22,7 @@ export default ({ mode }) => {
     },
     server: {
       port: 3002,
+      strictPort: true,
       proxy: {
         '/api': {
           target: proxyTarget,

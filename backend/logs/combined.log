@@ -1081,3 +1081,79 @@
 2026-06-16T08:55:16.062Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
 2026-06-16T08:55:16.069Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
 2026-06-16T08:55:16.072Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-19T09:32:35.917Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-19T09:32:35.929Z [[33mwarn[39m]: [33mUnable to connect to DB host localhost: [39m 
+2026-06-19T09:45:07.506Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-19T09:45:07.556Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-19T09:45:07.567Z [[32minfo[39m]: [32mPostgreSQL connected to localhost[39m 
+2026-06-19T09:45:07.571Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-19T09:45:07.577Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-19T09:45:07.582Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-19T12:36:37.161Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-19T12:36:37.194Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-19T12:36:37.202Z [[32minfo[39m]: [32mPostgreSQL connected to localhost[39m 
+2026-06-19T12:36:37.206Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-19T12:36:37.210Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-19T12:36:37.214Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-19T12:48:47.371Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-19T12:48:47.381Z [[33mwarn[39m]: [33mUnable to connect to DB host localhost: [39m 
+2026-06-19T12:50:00.277Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-19T12:50:00.289Z [[33mwarn[39m]: [33mUnable to connect to DB host localhost: [39m 
+2026-06-19T15:06:13.818Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-19T15:06:13.836Z [[33mwarn[39m]: [33mUnable to connect to DB host localhost: [39m 
+2026-06-22T01:38:25.311Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-22T01:38:25.357Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-22T01:38:25.367Z [[32minfo[39m]: [32mPostgreSQL connected to localhost[39m 
+2026-06-22T01:38:25.371Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-22T01:38:25.377Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-22T01:38:25.381Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-22T03:43:32.349Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-22T03:43:32.360Z [[33mwarn[39m]: [33mUnable to connect to DB host localhost: [39m 
+2026-06-23T02:49:04.369Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-23T02:49:04.381Z [[33mwarn[39m]: [33mUnable to connect to DB host localhost: [39m 
+2026-06-23T02:51:40.066Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-23T02:51:40.081Z [[33mwarn[39m]: [33mUnable to connect to DB host localhost: [39m 
+2026-06-23T02:52:08.662Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-23T02:52:08.675Z [[33mwarn[39m]: [33mUnable to connect to DB host localhost: [39m 
+2026-06-23T02:52:27.334Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-23T02:52:27.340Z [[33mwarn[39m]: [33mUnable to connect to DB host 127.0.0.1: connect ECONNREFUSED 127.0.0.1:5432[39m 
+2026-06-23T02:52:49.951Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-23T02:52:49.958Z [[33mwarn[39m]: [33mUnable to connect to DB host 127.0.0.1: connect ECONNREFUSED 127.0.0.1:5432[39m 
+2026-06-23T03:01:24.945Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-23T03:01:25.042Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-23T03:01:25.085Z [[32minfo[39m]: [32mPostgreSQL connected to 127.0.0.1[39m 
+2026-06-23T03:01:25.091Z [[32minfo[39m]: [32mRedis connected to 127.0.0.1:6379[39m 
+2026-06-23T03:01:25.146Z [[32minfo[39m]: [32mRedis connected to 127.0.0.1:6379[39m 
+2026-06-23T03:01:25.152Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-23T03:13:23.581Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-23T03:13:23.610Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-23T03:13:23.623Z [[32minfo[39m]: [32mPostgreSQL connected to 127.0.0.1[39m 
+2026-06-23T03:13:23.628Z [[32minfo[39m]: [32mRedis connected to 127.0.0.1:6379[39m 
+2026-06-23T03:13:23.638Z [[32minfo[39m]: [32mRedis connected to 127.0.0.1:6379[39m 
+2026-06-23T03:13:23.642Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-23T03:32:32.077Z [[31merror[39m]: [31m{[39m
+[31m  err: Error: Connection terminated due to connection timeout[39m
+[31m      at F:\library-devops-develop\backend\node_modules\pg-pool\index.js:45:11[39m
+[31m      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at async query (F:\library-devops-develop\backend\src\config\database.js:101:20)[39m
+[31m      at async seedAdmin (F:\library-devops-develop\backend\seed-admin.js:24:5) {[39m
+[31m    [cause]: Error: Connection terminated unexpectedly[39m
+[31m        at Connection.<anonymous> (F:\library-devops-develop\backend\node_modules\pg\lib\client.js:193:73)[39m
+[31m        at Object.onceWrapper (node:events:630:28)[39m
+[31m        at Connection.emit (node:events:509:28)[39m
+[31m        at Socket.<anonymous> (F:\library-devops-develop\backend\node_modules\pg\lib\connection.js:61:12)[39m
+[31m        at Socket.emit (node:events:509:28)[39m
+[31m        at TCP.<anonymous> (node:net:350:12)[39m
+[31m  }[39m
+[31m}[39m 
+2026-06-23T03:56:32.151Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-23T03:56:34.159Z [[33mwarn[39m]: [33mUnable to connect to DB host postgres: Connection terminated due to connection timeout[39m 
+2026-06-23T03:56:34.188Z [[32minfo[39m]: [32mDB host fallback: using localhost instead of postgres[39m 
+2026-06-23T03:56:34.193Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-23T03:56:36.203Z [[33mwarn[39m]: [33mDB connection attempt failed for host postgres: Connection terminated due to connection timeout[39m 
+2026-06-23T03:56:36.218Z [[32minfo[39m]: [32mPostgreSQL connected using host localhost[39m 
+2026-06-23T03:56:38.905Z [[33mwarn[39m]: [33mUnable to resolve Redis host redis[39m 
+2026-06-23T03:56:38.909Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-23T03:56:38.913Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-23T03:56:38.914Z [[32minfo[39m]: [32mRedis host fallback: using localhost instead of redis[39m 
+2026-06-23T03:56:38.915Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 

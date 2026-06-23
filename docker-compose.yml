@@ -78,7 +78,7 @@ services:
     restart: unless-stopped
     env_file: .env
     ports:
-      - "3000:3000"
+      - "3003:3004"
     depends_on:
       - backend
     networks:
@@ -93,7 +93,7 @@ services:
     container_name: library_nginx
     restart: unless-stopped
     ports:
-      - "80:80"
+      - "8080:80"
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
     depends_on:
