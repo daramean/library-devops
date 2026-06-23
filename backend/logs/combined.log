@@ -1157,3 +1157,13 @@
 2026-06-23T03:56:38.913Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
 2026-06-23T03:56:38.914Z [[32minfo[39m]: [32mRedis host fallback: using localhost instead of redis[39m 
 2026-06-23T03:56:38.915Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-23T09:32:34.711Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-23T09:32:36.716Z [[33mwarn[39m]: [33mUnable to connect to DB host postgres: Connection terminated due to connection timeout[39m 
+2026-06-23T09:32:36.773Z [[32minfo[39m]: [32mDB host fallback: using localhost instead of postgres[39m 
+2026-06-23T09:32:36.783Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-23T09:32:38.793Z [[33mwarn[39m]: [33mDB connection attempt failed for host postgres: Connection terminated due to connection timeout[39m 
+2026-06-23T09:32:38.806Z [[32minfo[39m]: [32mPostgreSQL connected using host localhost[39m 
+2026-06-23T09:38:46.345Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-23T09:38:48.358Z [[33mwarn[39m]: [33mUnable to connect to DB host postgres: Connection terminated due to connection timeout[39m 
+2026-06-23T09:38:48.399Z [[32minfo[39m]: [32mDB host fallback: using localhost instead of postgres[39m 
+2026-06-23T09:38:48.406Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
