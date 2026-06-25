@@ -1,16 +1,16 @@
 import React, { createContext, useContext, useState, useCallback, useEffect } from 'react';
-import { useAuth } from './AuthContext';
+import { api, useAuth } from './AuthContext';
 
 const NotificationContext = createContext(null);
 
 export function NotificationProvider({ children }) {
+  const { user } = useAuth();
   const [notifications, setNotifications] = useState([]);
-  const { api } = useAuth();
 
   // Fetch notifications from backend on mount
   useEffect(() => {
-    if (!api) return;
-    
+    if (!user) return;
+
     const fetchNotifications = async () => {
       try {
         const res = await api.get('/notifications');
@@ -25,7 +25,7 @@ export function NotificationProvider({ children }) {
     // Poll for new notifications every 10 seconds
     const interval = setInterval(fetchNotifications, 10000);
     return () => clearInterval(interval);
-  }, [api]);
+  }, [user]);
 
   const addNotification = useCallback((notification) => {
     setNotifications((prev) => [

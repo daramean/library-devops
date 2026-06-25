@@ -14,6 +14,8 @@ export default ({ mode }) => {
     }
   })();
 
+  console.log(`VITE_API_URL=${apiUrl}`);
+
   return defineConfig({
     envDir: root,
     plugins: [react()],

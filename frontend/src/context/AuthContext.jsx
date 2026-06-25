@@ -59,22 +59,44 @@ api.interceptors.request.use((config) => {
 api.interceptors.response.use(
   (r) => r,
   async (err) => {
-    const original = err.config;
-    // Don't try to refresh token if we're in the login/register endpoint or already retried
-    const isAuthEndpoint = original.url?.includes('/auth/login') || original.url?.includes('/auth/register');
-    
+    const original = err.config || {};
+    const message = err.message || 'Unknown error';
+
+    if (!err.response) {
+      console.error('Network error or no response from API:', message, original.url);
+      return Promise.reject({
+        ...err,
+        message: 'Network error: failed to communicate with the backend.',
+      });
+    }
+
+    // Don't try to refresh token if we're in the login/register or refresh endpoint, or if already retried
+    const isAuthEndpoint = original.url?.includes('/auth/login')
+      || original.url?.includes('/auth/register')
+      || original.url?.includes('/auth/refresh');
+
     if (err.response?.status === 401 && !original._retry && !isAuthEndpoint) {
       original._retry = true;
+      const refresh = localStorage.getItem('refreshToken');
+      if (!refresh) {
+        localStorage.clear();
+        if (window.location.pathname !== '/login') {
+          window.location.href = '/login';
+        }
+        return Promise.reject(err);
+      }
+
       try {
-        const refresh = localStorage.getItem('refreshToken');
         const { data } = await refreshClient.post('/auth/refresh', { refreshToken: refresh });
-        localStorage.setItem('accessToken',  data.data.accessToken);
+        localStorage.setItem('accessToken', data.data.accessToken);
         localStorage.setItem('refreshToken', data.data.refreshToken);
         original.headers.Authorization = `Bearer ${data.data.accessToken}`;
         return api(original);
       } catch {
         localStorage.clear();
-        window.location.href = '/login';
+        if (window.location.pathname !== '/login') {
+          window.location.href = '/login';
+        }
       }
     }
     return Promise.reject(err);
