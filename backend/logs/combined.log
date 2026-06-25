@@ -2160,3 +2160,320 @@
 2026-06-24T13:10:17.281Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
 2026-06-24T13:10:17.281Z [[32minfo[39m]: [32mRedis host fallback: using localhost instead of redis[39m 
 2026-06-24T13:10:17.282Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-25T06:30:14.600Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-25T06:30:16.607Z [[33mwarn[39m]: [33mUnable to connect to DB host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:30:16.660Z [[32minfo[39m]: [32mDB host fallback: using localhost instead of postgres[39m 
+2026-06-25T06:30:16.676Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-25T06:30:18.682Z [[33mwarn[39m]: [33mDB connection attempt failed for host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:30:18.694Z [[32minfo[39m]: [32mPostgreSQL connected using host localhost[39m 
+2026-06-25T06:30:21.390Z [[33mwarn[39m]: [33mUnable to resolve Redis host redis[39m 
+2026-06-25T06:30:21.428Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-25T06:30:21.464Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-25T06:30:21.465Z [[32minfo[39m]: [32mRedis host fallback: using localhost instead of redis[39m 
+2026-06-25T06:30:21.479Z [[33mwarn[39m]: [33mPort 5000 is already in use. Trying port 5001 instead...[39m 
+2026-06-25T06:30:21.482Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-25T06:30:23.487Z [[33mwarn[39m]: [33mUnable to connect to DB host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:30:23.501Z [[32minfo[39m]: [32mDB host fallback: using localhost instead of postgres[39m 
+2026-06-25T06:30:23.504Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-25T06:30:25.512Z [[33mwarn[39m]: [33mUnable to connect to DB host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:30:25.526Z [[32minfo[39m]: [32mPostgreSQL connected to localhost[39m 
+2026-06-25T06:30:28.207Z [[33mwarn[39m]: [33mUnable to resolve Redis host redis[39m 
+2026-06-25T06:30:28.211Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-25T06:30:28.212Z [[32minfo[39m]: [32mRedis host fallback: using localhost instead of redis[39m 
+2026-06-25T06:30:28.214Z [[33mwarn[39m]: [33mPort 5001 is already in use. Trying port 5002 instead...[39m 
+2026-06-25T06:30:28.215Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-25T06:30:30.218Z [[33mwarn[39m]: [33mUnable to connect to DB host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:30:30.273Z [[32minfo[39m]: [32mDB host fallback: using localhost instead of postgres[39m 
+2026-06-25T06:30:30.292Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-25T06:30:32.306Z [[33mwarn[39m]: [33mUnable to connect to DB host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:30:32.308Z [[32minfo[39m]: [32mPostgreSQL connected to localhost[39m 
+2026-06-25T06:30:34.997Z [[33mwarn[39m]: [33mUnable to resolve Redis host redis[39m 
+2026-06-25T06:30:35.001Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-25T06:30:35.002Z [[32minfo[39m]: [32mRedis host fallback: using localhost instead of redis[39m 
+2026-06-25T06:30:35.005Z [[32minfo[39m]: [32mServer on port 5002 | Docs: http://localhost:5002/api/docs[39m 
+2026-06-25T06:33:10.655Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.683Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.689Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.695Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.715Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.717Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.720Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.722Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.723Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.732Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[97]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:228:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/reset-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.739Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[97]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:228:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/reset-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.745Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[97]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:228:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/reset-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.762Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[97]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:228:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/reset-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.767Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[97]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:228:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/reset-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.780Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.788Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.937Z [[31merror[39m]: [31m{[39m
+[31m  err: Error: Database connection failed[39m
+[31m      at Object.<anonymous> (F:\library-devops-develop\backend\tests\fine.controller.test.js:478:38)[39m
+[31m      at Promise.then.completed (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:298:28)[39m
+[31m      at new Promise (<anonymous>)[39m
+[31m      at callAsyncCircusFn (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:231:10)[39m
+[31m      at _callCircusTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:316:40)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at _runTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:252:3)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:126:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at run (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:71:3)[39m
+[31m      at runAndTransformResultsToJestFormat (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)[39m
+[31m      at jestAdapter (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)[39m
+[31m      at runTestInternal (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:367:16)[39m
+[31m      at runTest (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:444:34)[39m
+[31m      at Object.worker (F:\library-devops-develop\backend\node_modules\jest-runner\build\testWorker.js:106:12),[39m
+[31m  url: '/api/v1/fines',[39m
+[31m  method: 'GET'[39m
+[31m}[39m 
+2026-06-25T06:34:09.106Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-25T06:34:11.121Z [[33mwarn[39m]: [33mUnable to connect to DB host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:34:11.141Z [[32minfo[39m]: [32mDB host fallback: using localhost instead of postgres[39m 
+2026-06-25T06:34:11.144Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-25T06:34:13.147Z [[33mwarn[39m]: [33mDB connection attempt failed for host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:34:13.163Z [[32minfo[39m]: [32mPostgreSQL connected using host localhost[39m 
+2026-06-25T06:34:15.847Z [[33mwarn[39m]: [33mUnable to resolve Redis host redis[39m 
+2026-06-25T06:34:15.851Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-25T06:34:15.859Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-25T06:34:15.859Z [[32minfo[39m]: [32mRedis host fallback: using localhost instead of redis[39m 
+2026-06-25T06:34:15.860Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-25T06:34:22.650Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-25T06:34:24.661Z [[33mwarn[39m]: [33mUnable to connect to DB host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:34:24.692Z [[32minfo[39m]: [32mDB host fallback: using localhost instead of postgres[39m 
+2026-06-25T06:34:24.697Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-25T06:34:26.701Z [[33mwarn[39m]: [33mDB connection attempt failed for host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:34:26.717Z [[32minfo[39m]: [32mPostgreSQL connected using host localhost[39m 
+2026-06-25T06:34:29.404Z [[33mwarn[39m]: [33mUnable to resolve Redis host redis[39m 
+2026-06-25T06:34:29.416Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-25T06:34:29.429Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-25T06:34:29.429Z [[32minfo[39m]: [32mRedis host fallback: using localhost instead of redis[39m 
+2026-06-25T06:34:29.435Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-25T06:34:47.567Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-25T06:34:49.583Z [[33mwarn[39m]: [33mUnable to connect to DB host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:34:49.603Z [[32minfo[39m]: [32mDB host fallback: using localhost instead of postgres[39m 
+2026-06-25T06:34:49.607Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-25T06:34:51.608Z [[33mwarn[39m]: [33mDB connection attempt failed for host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:34:51.629Z [[32minfo[39m]: [32mPostgreSQL connected using host localhost[39m 
+2026-06-25T06:34:54.315Z [[33mwarn[39m]: [33mUnable to resolve Redis host redis[39m 
+2026-06-25T06:34:54.329Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-25T06:34:54.340Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-25T06:34:54.341Z [[32minfo[39m]: [32mRedis host fallback: using localhost instead of redis[39m 
+2026-06-25T06:34:54.344Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-25T06:35:31.854Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-25T06:35:33.867Z [[33mwarn[39m]: [33mUnable to connect to DB host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:35:33.890Z [[32minfo[39m]: [32mDB host fallback: using localhost instead of postgres[39m 
+2026-06-25T06:35:33.894Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-25T06:35:35.908Z [[33mwarn[39m]: [33mDB connection attempt failed for host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:35:35.919Z [[32minfo[39m]: [32mPostgreSQL connected using host localhost[39m 
+2026-06-25T06:35:38.681Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-25T06:35:40.692Z [[33mwarn[39m]: [33mUnable to connect to DB host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:35:40.717Z [[32minfo[39m]: [32mDB host fallback: using localhost instead of postgres[39m 
+2026-06-25T06:35:40.722Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-25T06:35:42.731Z [[33mwarn[39m]: [33mDB connection attempt failed for host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:35:42.742Z [[32minfo[39m]: [32mPostgreSQL connected using host localhost[39m 
+2026-06-25T06:35:45.438Z [[33mwarn[39m]: [33mUnable to resolve Redis host redis[39m 
+2026-06-25T06:35:45.444Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-25T06:35:45.450Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-25T06:35:45.450Z [[32minfo[39m]: [32mRedis host fallback: using localhost instead of redis[39m 
+2026-06-25T06:35:45.453Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-25T06:35:59.159Z [[31merror[39m]: [31m{[39m
+[31m  err: Error: Database connection failed[39m
+[31m      at Object.<anonymous> (F:\library-devops-develop\backend\tests\fine.controller.test.js:478:38)[39m
+[31m      at Promise.then.completed (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:298:28)[39m
+[31m      at new Promise (<anonymous>)[39m
+[31m      at callAsyncCircusFn (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:231:10)[39m
+[31m      at _callCircusTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:316:40)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at _runTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:252:3)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:126:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at run (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:71:3)[39m
+[31m      at runAndTransformResultsToJestFormat (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)[39m
+[31m      at jestAdapter (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)[39m
+[31m      at runTestInternal (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:367:16)[39m
+[31m      at runTest (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:444:34)[39m
+[31m      at Object.worker (F:\library-devops-develop\backend\node_modules\jest-runner\build\testWorker.js:106:12),[39m
+[31m  url: '/api/v1/fines',[39m
+[31m  method: 'GET'[39m
+[31m}[39m 
+2026-06-25T06:35:59.547Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:36:46.868Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-25T06:36:48.877Z [[33mwarn[39m]: [33mUnable to connect to DB host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:36:48.897Z [[32minfo[39m]: [32mDB host fallback: using localhost instead of postgres[39m 
+2026-06-25T06:36:48.903Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-25T06:36:50.910Z [[33mwarn[39m]: [33mDB connection attempt failed for host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:36:50.927Z [[32minfo[39m]: [32mPostgreSQL connected using host localhost[39m 
+2026-06-25T06:36:53.625Z [[33mwarn[39m]: [33mUnable to resolve Redis host redis[39m 
+2026-06-25T06:36:53.633Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-25T06:36:53.644Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-25T06:36:53.644Z [[32minfo[39m]: [32mRedis host fallback: using localhost instead of redis[39m 
+2026-06-25T06:36:53.648Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-25T06:38:52.818Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-25T06:38:54.830Z [[33mwarn[39m]: [33mUnable to connect to DB host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:38:54.885Z [[32minfo[39m]: [32mDB host fallback: using localhost instead of postgres[39m 
+2026-06-25T06:38:54.901Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-25T06:38:56.916Z [[33mwarn[39m]: [33mDB connection attempt failed for host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:38:56.932Z [[32minfo[39m]: [32mPostgreSQL connected using host localhost[39m 
+2026-06-25T06:38:58.068Z [[31merror[39m]: [31m{[39m
+[31m  err: Error: Database connection failed[39m
+[31m      at Object.<anonymous> (F:\library-devops-develop\backend\tests\fine.controller.test.js:478:38)[39m
+[31m      at Promise.then.completed (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:298:28)[39m
+[31m      at new Promise (<anonymous>)[39m
+[31m      at callAsyncCircusFn (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:231:10)[39m
+[31m      at _callCircusTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:316:40)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at _runTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:252:3)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:126:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at run (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:71:3)[39m
+[31m      at runAndTransformResultsToJestFormat (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)[39m
+[31m      at jestAdapter (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)[39m
+[31m      at runTestInternal (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:367:16)[39m
+[31m      at runTest (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:444:34)[39m
+[31m      at Object.worker (F:\library-devops-develop\backend\node_modules\jest-runner\build\testWorker.js:106:12),[39m
+[31m  url: '/api/v1/fines',[39m
+[31m  method: 'GET'[39m
+[31m}[39m 
+2026-06-25T06:38:59.622Z [[33mwarn[39m]: [33mUnable to resolve Redis host redis[39m 
+2026-06-25T06:38:59.626Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-25T06:38:59.632Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-25T06:38:59.632Z [[32minfo[39m]: [32mRedis host fallback: using localhost instead of redis[39m 
+2026-06-25T06:38:59.634Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-25T06:39:33.919Z [[32minfo[39m]: [32mRunning migrations from F:\library-devops-develop\database\migrations[39m 
+2026-06-25T06:39:35.930Z [[33mwarn[39m]: [33mUnable to connect to DB host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:39:35.945Z [[32minfo[39m]: [32mDB host fallback: using localhost instead of postgres[39m 
+2026-06-25T06:39:35.949Z [[32minfo[39m]: [32mNo pending migrations to apply.[39m 
+2026-06-25T06:39:37.952Z [[33mwarn[39m]: [33mDB connection attempt failed for host postgres: Connection terminated due to connection timeout[39m 
+2026-06-25T06:39:37.968Z [[32minfo[39m]: [32mPostgreSQL connected using host localhost[39m 
+2026-06-25T06:39:40.647Z [[33mwarn[39m]: [33mUnable to resolve Redis host redis[39m 
+2026-06-25T06:39:40.653Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-25T06:39:40.661Z [[32minfo[39m]: [32mRedis connected to localhost:6379[39m 
+2026-06-25T06:39:40.661Z [[32minfo[39m]: [32mRedis host fallback: using localhost instead of redis[39m 
+2026-06-25T06:39:40.664Z [[32minfo[39m]: [32mServer on port 5000 | Docs: http://localhost:5000/api/docs[39m 
+2026-06-25T06:39:43.485Z [[31merror[39m]: [31m{[39m
+[31m  err: Error: Database connection failed[39m
+[31m      at Object.<anonymous> (F:\library-devops-develop\backend\tests\fine.controller.test.js:478:38)[39m
+[31m      at Promise.then.completed (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:298:28)[39m
+[31m      at new Promise (<anonymous>)[39m
+[31m      at callAsyncCircusFn (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:231:10)[39m
+[31m      at _callCircusTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:316:40)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at _runTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:252:3)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:126:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at run (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:71:3)[39m
+[31m      at runAndTransformResultsToJestFormat (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)[39m
+[31m      at jestAdapter (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)[39m
+[31m      at runTestInternal (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:367:16)[39m
+[31m      at runTest (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:444:34)[39m
+[31m      at Object.worker (F:\library-devops-develop\backend\node_modules\jest-runner\build\testWorker.js:106:12),[39m
+[31m  url: '/api/v1/fines',[39m
+[31m  method: 'GET'[39m
+[31m}[39m 

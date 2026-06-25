@@ -616,3 +616,206 @@
 [31m  method: 'GET'[39m
 [31m}[39m 
 2026-06-24T12:48:21.851Z [[31merror[39m]: [31mRedis error: read ECONNRESET[39m {"errno":-4077,"code":"ECONNRESET","syscall":"read","stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)"}
+2026-06-25T06:33:10.655Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.683Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.689Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.695Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.715Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.717Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.720Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.722Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.723Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.732Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[97]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:228:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/reset-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.739Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[97]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:228:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/reset-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.745Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[97]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:228:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/reset-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.762Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[97]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:228:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/reset-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.767Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[97]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:228:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/reset-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.780Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.788Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:33:10.937Z [[31merror[39m]: [31m{[39m
+[31m  err: Error: Database connection failed[39m
+[31m      at Object.<anonymous> (F:\library-devops-develop\backend\tests\fine.controller.test.js:478:38)[39m
+[31m      at Promise.then.completed (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:298:28)[39m
+[31m      at new Promise (<anonymous>)[39m
+[31m      at callAsyncCircusFn (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:231:10)[39m
+[31m      at _callCircusTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:316:40)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at _runTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:252:3)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:126:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at run (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:71:3)[39m
+[31m      at runAndTransformResultsToJestFormat (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)[39m
+[31m      at jestAdapter (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)[39m
+[31m      at runTestInternal (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:367:16)[39m
+[31m      at runTest (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:444:34)[39m
+[31m      at Object.worker (F:\library-devops-develop\backend\node_modules\jest-runner\build\testWorker.js:106:12),[39m
+[31m  url: '/api/v1/fines',[39m
+[31m  method: 'GET'[39m
+[31m}[39m 
+2026-06-25T06:35:59.159Z [[31merror[39m]: [31m{[39m
+[31m  err: Error: Database connection failed[39m
+[31m      at Object.<anonymous> (F:\library-devops-develop\backend\tests\fine.controller.test.js:478:38)[39m
+[31m      at Promise.then.completed (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:298:28)[39m
+[31m      at new Promise (<anonymous>)[39m
+[31m      at callAsyncCircusFn (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:231:10)[39m
+[31m      at _callCircusTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:316:40)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at _runTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:252:3)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:126:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at run (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:71:3)[39m
+[31m      at runAndTransformResultsToJestFormat (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)[39m
+[31m      at jestAdapter (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)[39m
+[31m      at runTestInternal (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:367:16)[39m
+[31m      at runTest (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:444:34)[39m
+[31m      at Object.worker (F:\library-devops-develop\backend\node_modules\jest-runner\build\testWorker.js:106:12),[39m
+[31m  url: '/api/v1/fines',[39m
+[31m  method: 'GET'[39m
+[31m}[39m 
+2026-06-25T06:35:59.547Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-25T06:38:58.068Z [[31merror[39m]: [31m{[39m
+[31m  err: Error: Database connection failed[39m
+[31m      at Object.<anonymous> (F:\library-devops-develop\backend\tests\fine.controller.test.js:478:38)[39m
+[31m      at Promise.then.completed (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:298:28)[39m
+[31m      at new Promise (<anonymous>)[39m
+[31m      at callAsyncCircusFn (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:231:10)[39m
+[31m      at _callCircusTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:316:40)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at _runTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:252:3)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:126:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at run (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:71:3)[39m
+[31m      at runAndTransformResultsToJestFormat (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)[39m
+[31m      at jestAdapter (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)[39m
+[31m      at runTestInternal (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:367:16)[39m
+[31m      at runTest (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:444:34)[39m
+[31m      at Object.worker (F:\library-devops-develop\backend\node_modules\jest-runner\build\testWorker.js:106:12),[39m
+[31m  url: '/api/v1/fines',[39m
+[31m  method: 'GET'[39m
+[31m}[39m 
+2026-06-25T06:39:43.485Z [[31merror[39m]: [31m{[39m
+[31m  err: Error: Database connection failed[39m
+[31m      at Object.<anonymous> (F:\library-devops-develop\backend\tests\fine.controller.test.js:478:38)[39m
+[31m      at Promise.then.completed (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:298:28)[39m
+[31m      at new Promise (<anonymous>)[39m
+[31m      at callAsyncCircusFn (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:231:10)[39m
+[31m      at _callCircusTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:316:40)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at _runTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:252:3)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:126:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at run (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:71:3)[39m
+[31m      at runAndTransformResultsToJestFormat (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)[39m
+[31m      at jestAdapter (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)[39m
+[31m      at runTestInternal (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:367:16)[39m
+[31m      at runTest (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:444:34)[39m
+[31m      at Object.worker (F:\library-devops-develop\backend\node_modules\jest-runner\build\testWorker.js:106:12),[39m
+[31m  url: '/api/v1/fines',[39m
+[31m  method: 'GET'[39m
+[31m}[39m 

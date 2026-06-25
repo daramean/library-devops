@@ -160,6 +160,12 @@ exports.forgotPassword = async (req, res) => {
   const { email } = req.body;
 
   if (!email) throw new AppError('Email is required', 400);
+  
+  // Validate email format
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    throw new AppError('Invalid email format', 400);
+  }
 
   const { rows } = await query(
     'SELECT id, full_name, email FROM users WHERE email = $1 AND is_active = TRUE',

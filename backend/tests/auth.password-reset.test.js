@@ -1,6 +1,6 @@
 const request = require('supertest');
 const app = require('../src/app');
-const { query, getClient } = require('../src/config/database');
+const { query } = require('../src/config/database');
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
 const bcryptjs = require('bcryptjs');
@@ -21,10 +21,7 @@ jest.mock('../src/utils/emailService', () => ({
 }));
 
 // ── Mock database ────────────────────────────────
-jest.mock('../src/config/database', () => ({
-  query: jest.fn(),
-  getClient: jest.fn(),
-}));
+jest.mock('../src/config/database');
 
 // ── Mock jwt ────────────────────────────────────
 jest.mock('jsonwebtoken');
@@ -32,17 +29,8 @@ jest.mock('jsonwebtoken');
 const emailService = require('../src/utils/emailService');
 
 describe('Auth - Password Reset', () => {
-  let mockDbClient;
-
   beforeEach(() => {
     jest.clearAllMocks();
-
-    mockDbClient = {
-      query: jest.fn(),
-      release: jest.fn(),
-    };
-
-    getClient.mockResolvedValue(mockDbClient);
     jwt.verify = jest.fn((token, secret) => {
       if (token === 'invalid_token') throw new Error('Invalid token');
       return { id: 'user-123', email: 'test@example.com' };
@@ -52,12 +40,12 @@ describe('Auth - Password Reset', () => {
   describe('POST /api/v1/auth/forgot-password', () => {
     test('should send password reset email for valid email', async () => {
       // Mock the user lookup
-      mockDbClient.query.mockResolvedValueOnce({
+      query.mockResolvedValueOnce({
         rows: [{ id: 'user-123', email: 'test@example.com', full_name: 'Test User' }],
       });
 
       // Mock the token update
-      mockDbClient.query.mockResolvedValueOnce({ rows: [{}] });
+      query.mockResolvedValueOnce({ rows: [{}] });
 
       const res = await request(app)
         .post('/api/v1/auth/forgot-password')
@@ -71,10 +59,10 @@ describe('Auth - Password Reset', () => {
 
     test('should not reveal whether email exists in system', async () => {
       // First request - email exists
-      mockDbClient.query.mockResolvedValueOnce({
+      query.mockResolvedValueOnce({
         rows: [{ id: 'user-123', email: 'existing@example.com' }],
       });
-      mockDbClient.query.mockResolvedValueOnce({ rows: [{}] });
+      query.mockResolvedValueOnce({ rows: [{}] });
 
       const res1 = await request(app)
         .post('/api/v1/auth/forgot-password')
@@ -82,10 +70,9 @@ describe('Auth - Password Reset', () => {
 
       // Reset mocks
       jest.clearAllMocks();
-      getClient.mockResolvedValue(mockDbClient);
 
       // Second request - email doesn't exist
-      mockDbClient.query.mockResolvedValueOnce({
+      query.mockResolvedValueOnce({
         rows: [], // No user found
       });
 
@@ -116,7 +103,7 @@ describe('Auth - Password Reset', () => {
     });
 
     test('should rate limit forgot password requests', async () => {
-      mockDbClient.query.mockResolvedValue({
+      query.mockResolvedValue({
         rows: [{ id: 'user-123', email: 'test@example.com' }],
       });
 
@@ -145,7 +132,7 @@ describe('Auth - Password Reset', () => {
       const hashedToken = crypto.createHash('sha256').update(testToken).digest('hex');
 
       // Mock user lookup
-      mockDbClient.query.mockResolvedValueOnce({
+      query.mockResolvedValueOnce({
         rows: [{
           id: 'user-123',
           email: 'test@example.com',
@@ -155,7 +142,7 @@ describe('Auth - Password Reset', () => {
       });
 
       // Mock password update
-      mockDbClient.query.mockResolvedValueOnce({ rows: [{}] });
+      query.mockResolvedValueOnce({ rows: [{}] });
 
       const res = await request(app)
         .post('/api/v1/auth/reset-password')
@@ -174,13 +161,9 @@ describe('Auth - Password Reset', () => {
       const testToken = 'expired-token';
       const hashedToken = crypto.createHash('sha256').update(testToken).digest('hex');
 
-      // Mock user with expired token
-      mockDbClient.query.mockResolvedValueOnce({
-        rows: [{
-          id: 'user-123',
-          reset_token: hashedToken,
-          reset_token_expires: new Date(Date.now() - 1000), // 1 second ago
-        }],
+      // Mock user lookup - returns empty rows because token is expired (checked by DB via NOW())
+      query.mockResolvedValueOnce({
+        rows: [], // No user found because token is expired
       });
 
       const res = await request(app)
@@ -196,7 +179,7 @@ describe('Auth - Password Reset', () => {
     });
 
     test('should reject invalid reset token', async () => {
-      mockDbClient.query.mockResolvedValueOnce({
+      query.mockResolvedValueOnce({
         rows: [], // No user with this token
       });
 
@@ -246,7 +229,7 @@ describe('Auth - Password Reset', () => {
       const hashedToken = crypto.createHash('sha256').update(testToken).digest('hex');
 
       // Mock user lookup
-      mockDbClient.query.mockResolvedValueOnce({
+      query.mockResolvedValueOnce({
         rows: [{
           id: 'user-123',
           reset_token: hashedToken,
@@ -255,7 +238,7 @@ describe('Auth - Password Reset', () => {
       });
 
       // Mock password update
-      mockDbClient.query.mockResolvedValueOnce({ rows: [{}] });
+      query.mockResolvedValueOnce({ rows: [{}] });
 
       await request(app)
         .post('/api/v1/auth/reset-password')
@@ -266,7 +249,7 @@ describe('Auth - Password Reset', () => {
         });
 
       // Verify reset_token was cleared
-      const updateCall = mockDbClient.query.mock.calls[1][0];
+      const updateCall = query.mock.calls[1][0];
       expect(updateCall).toContain('reset_token = NULL');
     });
 
@@ -302,11 +285,11 @@ describe('Auth - Password Reset', () => {
       let resetToken = null;
 
       // Step 1: Request password reset
-      mockDbClient.query.mockResolvedValueOnce({
+      query.mockResolvedValueOnce({
         rows: [{ id: 'user-123', email: userEmail, full_name: 'Test User' }],
       });
 
-      mockDbClient.query.mockResolvedValueOnce({ rows: [{}] });
+      query.mockResolvedValueOnce({ rows: [{}] });
 
       const forgotRes = await request(app)
         .post('/api/v1/auth/forgot-password')
@@ -325,10 +308,9 @@ describe('Auth - Password Reset', () => {
 
       // Step 2: Reset password with token
       jest.clearAllMocks();
-      getClient.mockResolvedValue(mockDbClient);
 
       const hashedToken = crypto.createHash('sha256').update(resetToken).digest('hex');
-      mockDbClient.query.mockResolvedValueOnce({
+      query.mockResolvedValueOnce({
         rows: [{
           id: 'user-123',
           reset_token: hashedToken,
@@ -336,7 +318,7 @@ describe('Auth - Password Reset', () => {
         }],
       });
 
-      mockDbClient.query.mockResolvedValueOnce({ rows: [{}] });
+      query.mockResolvedValueOnce({ rows: [{}] });
 
       const resetRes = await request(app)
         .post('/api/v1/auth/reset-password')
@@ -353,11 +335,11 @@ describe('Auth - Password Reset', () => {
 
   describe('Email Service Integration', () => {
     test('should send properly formatted reset email', async () => {
-      mockDbClient.query.mockResolvedValueOnce({
+      query.mockResolvedValueOnce({
         rows: [{ id: 'user-123', email: 'test@example.com', full_name: 'Test User' }],
       });
 
-      mockDbClient.query.mockResolvedValueOnce({ rows: [{}] });
+      query.mockResolvedValueOnce({ rows: [{}] });
 
       await request(app)
         .post('/api/v1/auth/forgot-password')
