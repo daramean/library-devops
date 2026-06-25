@@ -1,7 +1,7 @@
 const { query, getClient } = require('../config/database');
 const AppError = require('../utils/AppError');
 const { logActivity } = require('../utils/activityLogger');
-const { sendNotification } = require('../utils/notifications');
+const { sendNotification, sendAdminNotifications } = require('../utils/notifications');
 
 const MAX_BORROW  = parseInt(process.env.MAX_BORROW_BOOKS || '5');
 const BORROW_DAYS = parseInt(process.env.MAX_BORROW_DAYS  || '14');
@@ -54,9 +54,10 @@ exports.borrowBook = async (req, res) => {
     if (book.available_copies < 1) throw new AppError('Book is not available', 400);
 
     // Check existing borrow or request for this book
+    // Allow re-borrowing only if previous request was cancelled, rejected, or returned
     const { rows: dupRows } = await client.query(
       `SELECT id FROM borrow_records
-       WHERE user_id = $1 AND book_id = $2 AND status IN ('borrowed','pending')`,
+       WHERE user_id = $1 AND book_id = $2 AND status NOT IN ('cancelled','rejected','returned')`,
       [user_id, book_id]
     );
     if (dupRows.length) {
@@ -103,6 +104,10 @@ exports.borrowBook = async (req, res) => {
 
     await client.query('COMMIT');
 
+    // Send response immediately (notification and logging are non-blocking)
+    res.status(201).json({ success: true, data: borrowRows[0] });
+
+    // Fire off notification and activity logging (non-critical, don't await)
     const notification = {
       title: isAutoApproved ? 'Book Borrowed Successfully' : 'Borrow Request Submitted',
       message: isAutoApproved
@@ -110,15 +115,24 @@ exports.borrowBook = async (req, res) => {
         : `Your request for "${book.title}" is awaiting approval by an admin or librarian.`,
       type: isAutoApproved ? 'success' : 'info',
     };
-
-    sendNotification(user_id, notification).catch(() => {});
-
-    await logActivity(user_id, 'book.borrow', 'borrow_record', borrowRows[0].id, req, {
+    sendNotification(user_id, notification);
+    logActivity(user_id, 'book.borrow', 'borrow_record', borrowRows[0].id, req, {
       book_title: book.title,
       status,
     });
-
-    res.status(201).json({ success: true, data: borrowRows[0] });
+    // Also notify admins/librarians server-side for pending requests so they
+    // don't depend on the frontend to post admin notifications.
+    if (!isAutoApproved) {
+      try {
+        const { rows: urows } = await query('SELECT full_name FROM users WHERE id = $1', [user_id]);
+        const actorName = urows[0]?.full_name || 'A user';
+        const adminTitle = 'New Borrow Request';
+        const adminMessage = `${actorName} has requested to borrow "${book.title}".`;
+        sendAdminNotifications({ title: adminTitle, message: adminMessage, type: 'borrow' });
+      } catch (e) {
+        console.error('Failed to build/send admin notification:', e.message);
+      }
+    }
   } catch (err) {
     await client.query('ROLLBACK');
     throw err;
@@ -190,18 +204,19 @@ exports.approveBorrow = async (req, res) => {
 
     await client.query('COMMIT');
 
+    // Send response immediately (notification and logging are non-blocking)
+    res.json({ success: true, data: { borrow_id: id, status: 'borrowed', due_date } });
+
+    // Fire off notification and activity logging (non-critical, don't await)
     sendNotification(borrow.user_id, {
       title: 'Borrow Request Approved',
       message: `Your request for "${borrow.title}" has been approved. Return by ${due_date.toDateString()}.`,
       type: 'success',
-    }).catch(() => {});
-
-    await logActivity(req.user.id, 'book.borrow.approve', 'borrow_record', id, req, {
+    });
+    logActivity(req.user.id, 'book.borrow.approve', 'borrow_record', id, req, {
       book_title: borrow.title,
       approved_by: req.user.id,
     });
-
-    res.json({ success: true, data: { borrow_id: id, status: 'borrowed', due_date } });
   } catch (err) {
     await client.query('ROLLBACK');
     throw err;
@@ -239,18 +254,19 @@ exports.rejectBorrow = async (req, res) => {
 
     await client.query('COMMIT');
 
+    // Send response immediately (notification and logging are non-blocking)
+    res.json({ success: true, data: { borrow_id: id, status: 'rejected' } });
+
+    // Fire off notification and activity logging (non-critical, don't await)
     sendNotification(borrow.user_id, {
       title: 'Borrow Request Rejected',
       message: `Your request for "${borrow.title}" has been rejected.`,
       type: 'error',
-    }).catch(() => {});
-
-    await logActivity(req.user.id, 'book.borrow.reject', 'borrow_record', id, req, {
+    });
+    logActivity(req.user.id, 'book.borrow.reject', 'borrow_record', id, req, {
       book_title: borrow.title,
       rejected_by: req.user.id,
     });
-
-    res.json({ success: true, data: { borrow_id: id, status: 'rejected' } });
   } catch (err) {
     await client.query('ROLLBACK');
     throw err;
@@ -345,20 +361,21 @@ exports.returnBook = async (req, res) => {
 
     await client.query('COMMIT');
 
+    // Send response immediately (notification and logging are non-blocking)
+    res.json({
+      success: true,
+      data: { borrow_id, fine, days_overdue: daysOverdue, fine_amount: fineAmount },
+    });
+
+    // Fire off notification and activity logging (non-critical, don't await)
     if (fine) {
       sendNotification(borrow.user_id, {
         title:   'Fine Issued',
         message: `A fine of $${fineAmount.toFixed(2)} has been applied for "${borrow.book_title}".`,
         type:    'fine',
-      }).catch(() => {});
+      });
     }
-
-    await logActivity(req.user.id, 'book.return', 'return_record', borrow_id, req);
-
-    res.json({
-      success: true,
-      data: { borrow_id, fine, days_overdue: daysOverdue, fine_amount: fineAmount },
-    });
+    logActivity(req.user.id, 'book.return', 'return_record', borrow_id, req);
   } catch (err) {
     await client.query('ROLLBACK');
     throw err;
@@ -425,4 +442,44 @@ exports.getOverdueBooks = async (req, res) => {
   }
 
   res.json({ success: true, data: rows, count: rows.length });
+};
+
+// ── Cancel Pending Borrow ────────────────────────────
+exports.cancelBorrow = async (req, res) => {
+  const { id } = req.params;
+  const user_id = req.user.id;
+
+  try {
+    // Get the borrow record
+    const { rows: borrowRows } = await query(
+      `SELECT * FROM borrow_records WHERE id = $1 AND user_id = $2`,
+      [id, user_id]
+    );
+
+    if (!borrowRows.length) {
+      throw new AppError('Borrow record not found', 404);
+    }
+
+    const borrow = borrowRows[0];
+
+    // Check if status is pending
+    if (borrow.status !== 'pending') {
+      throw new AppError('Only pending borrow requests can be cancelled', 400);
+    }
+
+    // Update borrow status to cancelled
+    // Note: We don't need to restore available_copies since pending borrows
+    // don't decrement copies in the first place
+    await query(
+      `UPDATE borrow_records SET status = 'cancelled' WHERE id = $1`,
+      [id]
+    );
+
+    // Log activity
+    await logActivity(user_id, 'cancelled_borrow', `Cancelled borrow request for book ID ${borrow.book_id}`);
+
+    res.json({ success: true, message: 'Borrow request cancelled successfully' });
+  } catch (err) {
+    throw err;
+  }
 };

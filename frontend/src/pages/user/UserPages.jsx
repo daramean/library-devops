@@ -15,52 +15,49 @@ export function UserDashboard() {
   }, []);
 
   return (
-    <div className="space-y-6 animate-fade-in">
-      <div className="grid gap-6 lg:grid-cols-[1.6fr_1fr]">
-        <div className="card p-6">
-          <div className="flex items-start justify-between gap-4">
+    <div className="space-y-8 animate-fade-in">
+      {/* Welcome Section */}
+      <div className="grid gap-6 lg:grid-cols-[1.5fr_1fr]">
+        <div className="card p-8 bg-gradient-to-br from-brand-50 to-transparent dark:from-brand-950/20">
+          <div className="flex flex-col justify-between h-full">
             <div>
-              <p className="text-sm text-brand-500 uppercase tracking-[0.3em]">Welcome back</p>
-              <h1 className="mt-3 text-3xl font-bold">{user?.full_name ?? 'Library member'}</h1>
-              <p className="mt-3 text-sm text-gray-500 max-w-2xl">
+              <p className="text-xs font-semibold text-brand-600 uppercase tracking-wider">Welcome back</p>
+              <h1 className="mt-4 text-4xl font-bold text-gray-900 dark:text-white">
+                {user?.full_name ?? 'Library member'}
+              </h1>
+              <p className="mt-4 text-base text-gray-600 dark:text-gray-400 max-w-md leading-relaxed">
                 Here's a quick summary of your current borrow activity and recommendations.
               </p>
-            </div>
-            <div className="rounded-3xl bg-brand-50/80 p-4 text-right">
-              <p className="text-xs uppercase tracking-[0.3em] text-brand-600">Notices</p>
-              <p className="mt-3 text-3xl font-semibold text-brand-700">{stats?.dueSoon?.length ?? 0}</p>
-              <p className="text-xs text-gray-500">books due soon</p>
             </div>
           </div>
         </div>
 
         <div className="grid gap-4">
-          <div className="card p-5 bg-brand-600 text-white border-0 shadow-2xl">
-            <div className="flex items-center justify-between gap-4">
+          <div className="card p-6 bg-gradient-to-br from-brand-600 to-brand-700 text-white border-0 shadow-xl hover:shadow-2xl transition-shadow">
+            <div className="flex items-center justify-between gap-4 h-full">
               <div>
-                <p className="text-xs uppercase tracking-[0.3em] text-brand-200">Current status</p>
-                <p className="mt-3 text-2xl font-bold">{stats?.activeBorrows?.length ?? 0} books borrowed</p>
+                <p className="text-xs font-semibold uppercase tracking-wider text-brand-100">Books Borrowed</p>
+                <p className="mt-3 text-3xl font-bold">{stats?.activeBorrows?.length ?? 0}</p>
               </div>
-              <div className="rounded-3xl bg-white/10 p-3">
-                <BookOpen size={22} />
+              <div className="rounded-3xl bg-white/15 p-4 backdrop-blur-sm">
+                <BookOpen size={28} className="text-brand-100" />
               </div>
             </div>
           </div>
-          <div className="card p-5">
-            <p className="text-sm uppercase tracking-[0.3em] text-gray-500">Quick summary</p>
-            <div className="mt-4 grid gap-3">
+          
+          <div className="card p-6">
+            <p className="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wider">Quick Status</p>
+            <div className="mt-5 space-y-3">
               {[
-                { label: 'Due soon', value: stats?.dueSoon?.length ?? 0, tone: 'text-amber-600 bg-amber-50' },
-                { label: 'Unpaid fines', value: stats ? `$${parseFloat(stats.unpaidFines).toFixed(2)}` : '—', tone: 'text-red-600 bg-red-50' },
+                { label: 'Due Soon', value: stats?.dueSoon?.length ?? 0, color: 'from-amber-50 to-amber-50/50 dark:from-amber-950/20', icon: '⏰' },
+                { label: 'Unpaid Fines', value: stats ? `$${parseFloat(stats.unpaidFines).toFixed(2)}` : '—', color: 'from-red-50 to-red-50/50 dark:from-red-950/20', icon: '💰' },
               ].map(item => (
-                <div key={item.label} className="flex items-center justify-between gap-3 rounded-2xl border border-gray-200 dark:border-gray-800 p-4">
+                <div key={item.label} className={`bg-gradient-to-r ${item.color} rounded-2xl p-4 border border-gray-100 dark:border-gray-800 flex items-center justify-between`}>
                   <div>
-                    <p className="text-xs text-gray-500">{item.label}</p>
-                    <p className="mt-1 text-lg font-semibold">{item.value}</p>
+                    <p className="text-xs text-gray-600 dark:text-gray-400 font-medium">{item.label}</p>
+                    <p className="mt-1.5 text-lg font-bold text-gray-900 dark:text-white">{item.value}</p>
                   </div>
-                  <div className={`w-10 h-10 rounded-2xl flex items-center justify-center ${item.tone}`}>
-                    <span className="text-sm">{item.value}</span>
-                  </div>
+                  <span className="text-2xl">{item.icon}</span>
                 </div>
               ))}
             </div>
@@ -68,56 +65,59 @@ export function UserDashboard() {
         </div>
       </div>
 
-      <div className="grid gap-4 lg:grid-cols-4">
+      {/* Stats Grid */}
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         {[
-          { icon: BookOpen,       label: 'Active borrows', value: stats?.activeBorrows?.length ?? '—', color: 'text-brand-500 bg-brand-50' },
-          { icon: Clock,          label: 'Total borrowed',  value: stats?.totalBorrowed ?? '—',          color: 'text-green-500 bg-green-50' },
-          { icon: AlertTriangle,  label: 'Due soon',        value: stats?.dueSoon?.length ?? '—',        color: 'text-amber-500 bg-amber-50' },
-          { icon: DollarSign,     label: 'Unpaid fines',    value: stats ? `$${parseFloat(stats.unpaidFines).toFixed(2)}` : '—', color: 'text-red-500 bg-red-50' },
-        ].map(({ icon: Icon, label, value, color }) => (
-          <div key={label} className="card p-5">
-            <div className={`w-12 h-12 rounded-2xl flex items-center justify-center mb-4 ${color}`}>
-              <Icon size={22}/>
+          { icon: BookOpen,       label: 'Active Borrows', value: stats?.activeBorrows?.length ?? '—', gradient: 'from-blue-500 to-blue-600', bg: 'from-blue-50 to-blue-100/50 dark:from-blue-950/30 dark:to-blue-900/20' },
+          { icon: Clock,          label: 'Total Borrowed',  value: stats?.totalBorrowed ?? '—',          gradient: 'from-green-500 to-green-600', bg: 'from-green-50 to-green-100/50 dark:from-green-950/30 dark:to-green-900/20' },
+          { icon: AlertTriangle,  label: 'Due Soon',        value: stats?.dueSoon?.length ?? '—',        gradient: 'from-amber-500 to-amber-600', bg: 'from-amber-50 to-amber-100/50 dark:from-amber-950/30 dark:to-amber-900/20' },
+          { icon: DollarSign,     label: 'Unpaid Fines',    value: stats ? `$${parseFloat(stats.unpaidFines).toFixed(2)}` : '—', gradient: 'from-red-500 to-red-600', bg: 'from-red-50 to-red-100/50 dark:from-red-950/30 dark:to-red-900/20' },
+        ].map(({ icon: Icon, label, value, gradient, bg }) => (
+          <div key={label} className={`card p-6 bg-gradient-to-br ${bg} hover:shadow-lg transition-all`}>
+            <div className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${gradient} flex items-center justify-center mb-4`}>
+              <Icon size={24} className="text-white" />
             </div>
-            <div className="font-display text-3xl font-bold">{value}</div>
-            <div className="text-sm text-gray-500 mt-2">{label}</div>
+            <div className="text-3xl font-bold text-gray-900 dark:text-white">{value}</div>
+            <div className="text-sm text-gray-600 dark:text-gray-400 mt-2 font-medium">{label}</div>
           </div>
         ))}
       </div>
 
       {stats?.activeBorrows?.length > 0 && (
-        <div className="card p-5">
-          <div className="flex items-center justify-between gap-4 mb-4">
+        <div className="card p-8">
+          <div className="flex items-center justify-between gap-4 mb-6">
             <div>
-              <h3 className="font-display text-lg font-semibold">Currently borrowed</h3>
-              <p className="text-sm text-gray-500">Your active loans and due dates.</p>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Currently Borrowed</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">Your active loans and due dates</p>
             </div>
-            <span className="text-sm text-gray-500">{stats.activeBorrows.length} records</span>
+            <span className="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-sm font-medium text-gray-700 dark:text-gray-300">
+              {stats.activeBorrows.length} books
+            </span>
           </div>
           <div className="space-y-3">
             {stats.activeBorrows.map(b => (
-              <div key={b.id} className="flex flex-col gap-3 rounded-3xl border border-gray-200 dark:border-gray-800 p-4 sm:flex-row sm:items-center sm:justify-between">
-                <div className="flex items-center gap-4">
+              <div key={b.id} className="flex flex-col gap-4 rounded-3xl border border-gray-200 dark:border-gray-700 p-5 hover:shadow-md transition-all sm:flex-row sm:items-center sm:justify-between bg-gradient-to-r from-gray-50/50 to-transparent dark:from-gray-800/30 dark:to-transparent">
+                <div className="flex items-center gap-4 flex-1">
                   {normalizeCoverUrl(b.cover_url) ? (
                     <img
                       src={normalizeCoverUrl(b.cover_url)}
                       alt={b.title}
-                      className="w-14 h-20 object-cover rounded-2xl"
+                      className="w-16 h-24 object-cover rounded-2xl shadow-md"
                     />
                   ) : (
-                    <div className="w-14 h-20 bg-brand-100 dark:bg-brand-900 rounded-2xl flex items-center justify-center">
-                      <BookOpen size={18} className="text-brand-500" />
+                    <div className="w-16 h-24 bg-gradient-to-br from-brand-100 to-brand-50 dark:from-brand-900/30 dark:to-brand-800/20 rounded-2xl flex items-center justify-center">
+                      <BookOpen size={20} className="text-brand-500" />
                     </div>
                   )}
-                  <div>
-                    <div className="font-medium text-sm">{b.title}</div>
-                    <div className="text-xs text-gray-500">{b.author}</div>
+                  <div className="flex-1">
+                    <div className="font-bold text-gray-900 dark:text-white">{b.title}</div>
+                    <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">{b.author}</div>
                   </div>
                 </div>
-                <div className="rounded-3xl bg-gray-50 dark:bg-gray-900 p-3 text-right min-w-[120px]">
-                  <div className="text-xs text-gray-500 uppercase">Due</div>
-                  <div className={`mt-1 text-sm font-semibold ${new Date(b.due_date) < new Date() ? 'text-red-500' : 'text-gray-900 dark:text-gray-100'}`}>
-                    {format(new Date(b.due_date), 'MMM d')}
+                <div className="rounded-2xl bg-gradient-to-br from-gray-100 to-gray-50 dark:from-gray-700 dark:to-gray-800 p-4 text-right min-w-[140px]">
+                  <div className="text-xs text-gray-600 dark:text-gray-400 font-semibold uppercase tracking-wider">Due Date</div>
+                  <div className={`mt-2 text-lg font-bold ${new Date(b.due_date) < new Date() ? 'text-red-600 dark:text-red-400' : 'text-brand-600 dark:text-brand-400'}`}>
+                    {format(new Date(b.due_date), 'MMM d, yyyy')}
                   </div>
                 </div>
               </div>
@@ -127,29 +127,32 @@ export function UserDashboard() {
       )}
 
       {stats?.recommended?.length > 0 && (
-        <div className="space-y-3">
+        <div className="space-y-5">
           <div className="flex items-center justify-between gap-4">
-            <h3 className="font-display text-lg font-semibold">Recommended for you</h3>
-            <span className="text-sm text-gray-500">Updated now</span>
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Recommended For You</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">Personalized picks based on your interests</p>
+            </div>
+            <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">Just now</span>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {stats.recommended.map(b => {
               const coverUrl = normalizeCoverUrl(b.cover_url);
               return (
-                <div key={b.id} className="card p-4 text-center hover:shadow-lg transition cursor-pointer">
-                  <div className="w-full h-24 rounded-3xl mb-3 overflow-hidden bg-brand-50 dark:bg-brand-900/20 flex items-center justify-center">
+                <div key={b.id} className="card p-5 text-center hover:shadow-xl transition-all hover:-translate-y-1 group cursor-pointer">
+                  <div className="w-full h-32 rounded-2xl mb-4 overflow-hidden bg-gradient-to-br from-brand-100 to-brand-50 dark:from-brand-900/30 dark:to-brand-800/20 flex items-center justify-center">
                     {coverUrl ? (
                       <img
                         src={coverUrl}
                         alt={b.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                       />
                     ) : (
-                      <BookOpen size={24} className="text-brand-400" />
+                      <BookOpen size={28} className="text-brand-400" />
                     )}
                   </div>
-                  <div className="text-xs font-semibold truncate">{b.title}</div>
-                  <div className="text-xs text-gray-400 truncate">{b.author}</div>
+                  <div className="font-bold text-sm text-gray-900 dark:text-white line-clamp-2 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition">{b.title}</div>
+                  <div className="text-xs text-gray-500 dark:text-gray-400 truncate mt-1">{b.author}</div>
                 </div>
               );
             })}
@@ -164,6 +167,7 @@ export function UserDashboard() {
 //  user/Books.jsx
 // ════════════════════════════════════════════════
 import toast from 'react-hot-toast';
+import { useNotifications } from '../../context/NotificationContext';
 
 export function UserBooks() {
   const [books, setBooks]     = useState([]);
@@ -173,6 +177,8 @@ export function UserBooks() {
   const [catFilter, setCatFilter] = useState('');
   const [onlyAvail, setOnlyAvail] = useState(false);
   const [borrowing, setBorrowing] = useState(null);
+  const { addNotification } = useNotifications();
+  const { user } = useAuth();
 
   const load = async () => {
     setLoading(true);
@@ -191,11 +197,45 @@ export function UserBooks() {
   const handleBorrow = async (book_id) => {
     setBorrowing(book_id);
     try {
-      await api.post('/borrows', { book_id });
-      toast.success('Book borrowed successfully!');
+      const res = await api.post('/borrows', { book_id });
+      const book = books.find(b => b.id === book_id);
+      const bookTitle = book?.title || 'Book';
+      
+      // Show success alert with username and book name
+      toast.success(`${user?.full_name} borrowed "${bookTitle}" successfully!`, {
+        style: {
+          background: '#f0fdf4',
+          color: '#166534',
+          border: '1px solid #86efac',
+          borderRadius: '12px',
+          boxShadow: '0 10px 40px rgba(0,0,0,0.12)',
+          padding: '16px',
+          fontSize: '14px',
+          fontWeight: '500',
+        },
+        duration: 4000,
+      });
+      
+      addNotification({
+        title: 'Book Borrowed',
+        message: `You have successfully borrowed "${bookTitle}".`,
+      });
+      
       load();
+      
+      // Admin notifications are handled server-side; no client call required.
     } catch (err) {
-      toast.error(err.response?.data?.message || 'Failed to borrow');
+      toast.error(err.response?.data?.message || 'Failed to borrow', {
+        style: {
+          background: '#fef2f2',
+          color: '#991b1b',
+          border: '1px solid #fecaca',
+          borderRadius: '12px',
+          boxShadow: '0 10px 40px rgba(0,0,0,0.12)',
+          padding: '16px',
+        },
+        duration: 4000,
+      });
     } finally { setBorrowing(null); }
   };
 
@@ -265,6 +305,8 @@ export function UserBorrows() {
   const [rows, setRows]     = useState([]);
   const [loading, setLoading] = useState(true);
   const [returning, setReturning] = useState(null);
+  const [canceling, setCanceling] = useState(null);
+  const { addNotification } = useNotifications();
 
   const load = async () => {
     setLoading(true);
@@ -279,11 +321,33 @@ export function UserBorrows() {
     try {
       const { data } = await api.post('/borrows/return', { borrow_id });
       const fine = data.data.fine_amount;
-      toast.success(fine > 0 ? `Returned! Fine: $${fine.toFixed(2)}` : 'Returned successfully!');
+      const bookTitle = rows.find(b => b.id === borrow_id)?.title || 'Book';
+      const message = fine > 0 ? `Returned! Fine: $${fine.toFixed(2)}` : 'Returned successfully!';
+      toast.success(message);
+      addNotification({
+        title: 'Book Returned',
+        message: `"${bookTitle}" has been returned. ${fine > 0 ? `Fine: $${fine.toFixed(2)}` : 'No fines.'}`,
+      });
       load();
     } catch (err) {
       toast.error(err.response?.data?.message || 'Error');
     } finally { setReturning(null); }
+  };
+
+  const handleCancel = async (borrow_id) => {
+    setCanceling(borrow_id);
+    try {
+      await api.post(`/borrows/${borrow_id}/cancel`);
+      const bookTitle = rows.find(b => b.id === borrow_id)?.title || 'Book';
+      toast.success('Borrow request cancelled!');
+      addNotification({
+        title: 'Borrow Cancelled',
+        message: `Your request for "${bookTitle}" has been cancelled.`,
+      });
+      load();
+    } catch (err) {
+      toast.error(err.response?.data?.message || 'Failed to cancel');
+    } finally { setCanceling(null); }
   };
 
   const STATUS = {
@@ -314,7 +378,12 @@ export function UserBorrows() {
                 <td className="px-4 py-3"><span className={`badge ${STATUS[r.status] || 'bg-gray-100 text-gray-600'}`}>{r.status}</span></td>
                 <td className="px-4 py-3 text-xs">{r.fine_amount ? <span className={r.fine_paid ? 'text-green-500' : 'text-red-500'}>${r.fine_amount}</span> : '—'}</td>
                 <td className="px-4 py-3">
-                  {r.status === 'borrowed' || r.status === 'overdue' ? (
+                  {r.status === 'pending' ? (
+                    <button onClick={() => handleCancel(r.id)} disabled={canceling === r.id}
+                      className="btn-secondary py-1 px-3 text-xs bg-red-50 text-red-600 hover:bg-red-100">
+                      {canceling === r.id ? '…' : 'Cancel'}
+                    </button>
+                  ) : r.status === 'borrowed' || r.status === 'overdue' ? (
                     <button onClick={() => handleReturn(r.id)} disabled={returning === r.id}
                       className="btn-secondary py-1 px-3 text-xs">
                       {returning === r.id ? '…' : 'Return'}
@@ -378,23 +447,112 @@ export function UserFines() {
 //  user/Profile.jsx
 // ════════════════════════════════════════════════
 export function UserProfile() {
-  const { user } = useAuth();
+  const { user, setUser } = useAuth();
+  const fileInputRef = React.useRef(null);
+  const [uploading, setUploading] = React.useState(false);
+  const [profileImage, setProfileImage] = React.useState(user?.avatar_url || null);
+
+  const handleProfilePicChange = async (e) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setUploading(true);
+    try {
+      const formData = new FormData();
+      formData.append('profilePic', file);
+
+      const response = await api.put('/auth/profile', formData, {
+        headers: { 'Content-Type': 'multipart/form-data' }
+      });
+
+      if (response.data.data?.avatar_url) {
+        setProfileImage(response.data.data.avatar_url);
+        setUser(response.data.data);
+        localStorage.setItem('user', JSON.stringify(response.data.data));
+        toast.success('Profile picture updated!');
+      }
+    } catch (err) {
+      toast.error(err.response?.data?.message || 'Upload failed');
+    } finally {
+      setUploading(false);
+    }
+  };
+
   return (
-    <div className="space-y-5 animate-fade-in max-w-lg">
-      <h1 className="font-display text-2xl font-bold">Profile</h1>
-      <div className="card p-6 space-y-4">
-        <div className="flex items-center gap-4">
-          <div className="w-16 h-16 rounded-2xl bg-brand-100 dark:bg-brand-900 flex items-center justify-center text-2xl font-bold text-brand-600">
-            {user?.full_name?.[0]}
-          </div>
-          <div>
-            <div className="font-display font-bold text-xl">{user?.full_name}</div>
-            <div className="text-gray-500">{user?.email}</div>
-            <div className="text-xs badge bg-brand-50 text-brand-600 mt-1 capitalize">{user?.role}</div>
+    <div className="space-y-6 animate-fade-in max-w-2xl">
+      <div>
+        <h1 className="font-display text-3xl font-bold text-gray-900">My Profile</h1>
+        <p className="text-gray-600 mt-1">Manage your account settings and profile information</p>
+      </div>
+
+      {/* Profile Header */}
+      <div className="bg-white rounded-[16px] p-8 shadow-sm border border-gray-100">
+        <div className="flex flex-col gap-6">
+          {/* Profile Picture */}
+          <div className="flex items-center gap-6">
+            <div className="relative">
+              <div className="w-20 h-20 rounded-[14px] bg-gradient-to-br from-brand-500 to-purple-600 flex items-center justify-center text-white text-2xl font-bold shadow-lg overflow-hidden">
+                {profileImage ? (
+                  <img src={profileImage} alt={user?.full_name} className="w-full h-full object-cover" />
+                ) : (
+                  user?.full_name?.[0]
+                )}
+              </div>
+              <button
+                onClick={() => fileInputRef.current?.click()}
+                disabled={uploading}
+                className="absolute bottom-0 right-0 w-7 h-7 rounded-full bg-brand-600 hover:bg-brand-700 text-white flex items-center justify-center transition shadow-md"
+                title="Change profile picture"
+              >
+                {uploading ? (
+                  <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                ) : (
+                  '📷'
+                )}
+              </button>
+              <input
+                ref={fileInputRef}
+                type="file"
+                accept="image/*"
+                onChange={handleProfilePicChange}
+                className="hidden"
+                disabled={uploading}
+              />
+            </div>
+            <div>
+              <div className="font-display text-2xl font-bold text-gray-900">{user?.full_name}</div>
+              <div className="text-gray-600 text-sm">{user?.email}</div>
+              <div className="text-xs text-gray-500 mt-2 capitalize">
+                Member since {user?.created_at ? new Date(user.created_at).toLocaleDateString() : '—'}
+              </div>
+            </div>
           </div>
         </div>
-        <div className="text-sm text-gray-500 p-4 bg-gray-50 dark:bg-gray-800 rounded-xl">
-          Profile editing coming soon. Contact admin to update your details.
+      </div>
+
+      {/* Account Information */}
+      <div className="bg-white rounded-[16px] p-6 shadow-sm border border-gray-100">
+        <h2 className="font-display text-lg font-semibold text-gray-900 mb-4">Account Information</h2>
+        <div className="space-y-4">
+          <div className="grid grid-cols-2 gap-4">
+            <div>
+              <label className="text-xs uppercase tracking-[0.15em] text-gray-600 font-semibold block mb-2">Full Name</label>
+              <div className="px-4 py-3 bg-gray-50 rounded-[10px] text-gray-900 font-medium">{user?.full_name || '—'}</div>
+            </div>
+            <div>
+              <label className="text-xs uppercase tracking-[0.15em] text-gray-600 font-semibold block mb-2">Email</label>
+              <div className="px-4 py-3 bg-gray-50 rounded-[10px] text-gray-900 font-medium">{user?.email || '—'}</div>
+            </div>
+          </div>
+          <div>
+            <label className="text-xs uppercase tracking-[0.15em] text-gray-600 font-semibold block mb-2">Role</label>
+            <div className="inline-block px-4 py-2 bg-brand-100 text-brand-700 rounded-full text-xs font-semibold capitalize">
+              {user?.role || '—'}
+            </div>
+          </div>
+          <div className="pt-4 border-t">
+            <p className="text-sm text-gray-600">To update your profile information, please contact the library administrator.</p>
+          </div>
         </div>
       </div>
     </div>

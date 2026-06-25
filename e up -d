@@ -1,0 +1,44 @@
+[33mf7b576e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Update combined.log
+[33mf3a1547[m Trigger prod deployment workflow
+[33me5d40fe[m Resolve merge conflict in CD workflow
+[33m749eaf8[m Initial commit
+[33m3b5fb3c[m[33m ([m[1;32mcopilot/worktree-2026-06-23T04-06-19[m[33m, [m[1;32mcopilot/worktree-2026-06-23T04-05-25[m[33m)[m feat: Add users API routes
+[33mc47fbf4[m trigger: test dev deploy fix
+[33mc4cfed3[m fix: Simplify dev deploy - remove K8s commands
+[33mb27ef91[m fix: Remove GHCR push again - keep build only
+[33mbb28c0d[m trigger: test dev deployment
+[33m9adcef5[m trigger: Re-run CI/CD with fixed workflow
+[33m480ee2c[m fix: Remove GHCR push - just build Docker images locally
+[33mf8b390c[m fix: Simplify CD workflow - remove K8s deployment until secrets configured
+[33m8c68595[m fix: Correct namespace and deployment names in CD pipeline
+[33maac53e5[m fix: Add GitHub Actions permissions for GHCR push
+[33me716ca3[m Add comprehensive DevOps project presentation for teacher
+[33m001e69b[m Update CI/CD pipeline and logs - Ready for presentation
+[33md8a78b4[m test: GHCR auth with new token
+[33mbf4c7ea[m test: trigger CD pipeline with GHCR auth
+[33m1f83b1c[m fix: remove invalid environment field from deploy-prod job
+[33m321b27c[m fix: simplify prod deployment in cd.yml - use kubectl set image instead of heredocs
+[33ma827a2b[m fix: simplify prod deployment in cd.yml - use kubectl set image instead of heredocs
+[33meb3abab[m Remove emoji from project title in README
+[33m1f2a134[m Remove unused temporary files
+[33m7df7936[m Remove unused temporary testing files
+[33med2fb0f[m Add tmp_commit_11 (increment)
+[33mcce5e11[m Add tmp_commit_10 (increment)
+[33m12ef05a[m Add tmp_commit_9 (increment)
+[33m5654c20[m Add tmp_commit_8 (increment)
+[33mff7b4a8[m Add tmp_commit_7 (increment)
+[33m3b814ea[m Add tmp_commit_6 (increment)
+[33mfe3121a[m Add tmp_commit_5 (increment)
+[33m37d115f[m Add tmp_commit_4 (increment)
+[33m922b036[m Add tmp_commit_3 (increment)
+[33m9e1ae3e[m Add tmp_commit_2 (increment)
+[33mfc510cb[m Add tmp_commit_1 (increment)
+[33md01ecdc[m Resolve FEATURE.md conflicts: combine placeholders
+[33m3578376[m Resolve merge conflict in FEATURE.md
+[33m53402ac[m Merge feature/add-tests into develop
+[33m6121ee5[m chore(feature/add-tests): add placeholder file for PR
+[33ma7ddef4[m chore(feature/book-tags): add placeholder file for PR
+[33mc2b81cc[m chore(feature/frontend-responsive): add placeholder file for PR
+[33mce3c4d1[m Fix undefined sanitizedTags in book create logic
+[33m803f585[m Add package-lock files and allow lockfiles so CI npm ci succeeds
+[33m3aa9575[m chore: initial commit

@@ -178,6 +178,106 @@ function ResetPasswordModal({ open, user, onClose, onSaved }) {
   );
 }
 
+function EditUserModal({ open, user, onClose, onSaved }) {
+  const [form, setForm] = useState({ full_name: '', email: '', phone: '', role: 'user' });
+  const [loading, setLoading] = useState(false);
+  const { addNotification } = useNotifications();
+
+  useEffect(() => {
+    if (open && user) {
+      setForm({
+        full_name: user.full_name || '',
+        email: user.email || '',
+        phone: user.phone || '',
+        role: user.role || 'user',
+      });
+    }
+  }, [open, user]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!user) return;
+    setLoading(true);
+    try {
+      await api.put(`/users/${user.id}`, form);
+      toast.success('User updated successfully');
+      addNotification({
+        title: 'User updated',
+        message: `${form.full_name}'s information has been updated.`,
+      });
+      onSaved();
+      onClose();
+    } catch (err) {
+      toast.error(err.response?.data?.message || 'Unable to update user');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  if (!open || !user) return null;
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50">
+      <div className="bg-white dark:bg-gray-900 rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl animate-slide-up">
+        <div className="flex items-center justify-between p-6 border-b">
+          <h2 className="font-display font-bold text-lg">Edit User</h2>
+          <button onClick={onClose}><span className="text-xl">×</span></button>
+        </div>
+        <form onSubmit={handleSubmit} className="p-6 grid grid-cols-2 gap-4">
+          <div className="col-span-2">
+            <label className="block text-xs font-medium text-gray-600 dark:text-gray-400 mb-1">Full Name</label>
+            <input
+              className="input text-sm"
+              placeholder="Full Name"
+              value={form.full_name}
+              onChange={(e) => setForm((prev) => ({ ...prev, full_name: e.target.value }))}
+              required
+            />
+          </div>
+          <div>
+            <label className="block text-xs font-medium text-gray-600 dark:text-gray-400 mb-1">Email</label>
+            <input
+              type="email"
+              className="input text-sm"
+              placeholder="Email"
+              value={form.email}
+              onChange={(e) => setForm((prev) => ({ ...prev, email: e.target.value }))}
+              required
+            />
+          </div>
+          <div>
+            <label className="block text-xs font-medium text-gray-600 dark:text-gray-400 mb-1">Phone</label>
+            <input
+              className="input text-sm"
+              placeholder="Phone"
+              value={form.phone}
+              onChange={(e) => setForm((prev) => ({ ...prev, phone: e.target.value }))}
+            />
+          </div>
+          <div className="col-span-2">
+            <label className="block text-xs font-medium text-gray-600 dark:text-gray-400 mb-1">Role</label>
+            <select
+              className="input text-sm w-full"
+              value={form.role}
+              onChange={(e) => setForm((prev) => ({ ...prev, role: e.target.value }))}
+            >
+              {USER_ROLES.map((role) => (
+                <option key={role} value={role}>{role}</option>
+              ))}
+            </select>
+          </div>
+          <div className="col-span-2 flex justify-end gap-3 pt-2">
+            <button type="button" onClick={onClose} className="btn-secondary">Cancel</button>
+            <button type="submit" disabled={loading} className="btn-primary">
+              {loading ? 'Saving…' : 'Update User'}
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+}
+
 export function AdminBorrows() {
   const [rows, setRows]     = useState([]);
   const [loading, setLoading] = useState(true);
@@ -293,7 +393,7 @@ export function AdminBorrows() {
       <div className="card overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
-            <thead className="bg-gray-50 dark:bg-gray-800/50">
+            <thead className="sticky top-0 z-10 bg-gray-50 dark:bg-gray-800/50">
               <tr className="text-xs text-gray-500 text-left">
                 {['Member','Book','Borrowed','Due','Status','Fine','Actions'].map(h => (
                   <th key={h} className="px-4 py-3 font-medium">{h}</th>
@@ -466,6 +566,7 @@ export function AdminUsers() {
   const [search, setSearch]   = useState('');
   const [modalOpen, setModalOpen] = useState(false);
   const [resetUser, setResetUser] = useState(null);
+  const [editUser, setEditUser] = useState(null);
   const { addNotification } = useNotifications();
 
   const load = async () => {
@@ -502,6 +603,12 @@ export function AdminUsers() {
         onClose={() => setResetUser(null)}
         onSaved={() => { setResetUser(null); load(); }}
       />
+      <EditUserModal
+        open={Boolean(editUser)}
+        user={editUser}
+        onClose={() => setEditUser(null)}
+        onSaved={() => { setEditUser(null); load(); }}
+      />
       <div className="space-y-5 animate-fade-in">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <h1 className="font-display text-2xl font-bold">Users</h1>
@@ -514,7 +621,7 @@ export function AdminUsers() {
 
       <div className="card overflow-hidden">
         <table className="w-full text-sm">
-          <thead className="bg-gray-50 dark:bg-gray-800/50">
+          <thead className="sticky top-0 z-10 bg-gray-50 dark:bg-gray-800/50">
             <tr className="text-xs text-gray-500 text-left">
               {['Name','Email','Role','Borrows','Last Login','Status','Actions'].map(h => (
                 <th key={h} className="px-4 py-3 font-medium">{h}</th>
@@ -541,6 +648,10 @@ export function AdminUsers() {
                   </span>
                 </td>
                 <td className="px-4 py-3 flex items-center gap-2">
+                  <button onClick={() => setEditUser(u)}
+                    className="text-xs text-green-600 hover:text-green-800 transition">
+                    Edit
+                  </button>
                   <button onClick={() => setResetUser(u)}
                     className="text-xs text-blue-600 hover:text-blue-800 transition">
                     Reset
@@ -600,7 +711,7 @@ export function AdminFines() {
 
       <div className="card overflow-hidden">
         <table className="w-full text-sm">
-          <thead className="bg-gray-50 dark:bg-gray-800/50">
+          <thead className="sticky top-0 z-10 bg-gray-50 dark:bg-gray-800/50">
             <tr className="text-xs text-gray-500 text-left">
               {['Member','Book','Amount','Reason','Days Overdue','Status',''].map(h => (
                 <th key={h} className="px-4 py-3 font-medium">{h}</th>
@@ -653,12 +764,13 @@ export function AdminActivity() {
     <div className="space-y-5 animate-fade-in">
       <h1 className="font-display text-2xl font-bold">Activity Log</h1>
       <div className="card overflow-hidden">
-        <table className="w-full text-sm">
-          <thead className="bg-gray-50 dark:bg-gray-800/50">
-            <tr className="text-xs text-gray-500 text-left">
-              {['User','Action','Time','IP'].map(h => <th key={h} className="px-4 py-3 font-medium">{h}</th>)}
-            </tr>
-          </thead>
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead className="sticky top-0 z-10 bg-gray-50 dark:bg-gray-800/50">
+              <tr className="text-xs text-gray-500 text-left">
+                {['User','Action','Time','IP'].map(h => <th key={h} className="px-4 py-3 font-medium">{h}</th>)}
+              </tr>
+            </thead>
           <tbody>
             {loading ? [...Array(6)].map((_,i) => (
               <tr key={i}><td colSpan={4} className="px-4 py-3"><div className="skeleton h-5"/></td></tr>
@@ -672,6 +784,7 @@ export function AdminActivity() {
             ))}
           </tbody>
         </table>
+        </div>
       </div>
     </div>
   );

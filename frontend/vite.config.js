@@ -5,12 +5,12 @@ import path from 'path';
 export default ({ mode }) => {
   const root = path.resolve(__dirname, '..');
   const env = loadEnv(mode, root, '');
-  const apiUrl = env.VITE_API_URL || 'http://localhost:5001/api/v1';
+  const apiUrl = env.VITE_API_URL || 'http://localhost:5000/api/v1';
   const proxyTarget = (() => {
     try {
       return new URL(apiUrl).origin;
     } catch {
-      return 'http://localhost:5001';
+      return 'http://localhost:5000';
     }
   })();
 

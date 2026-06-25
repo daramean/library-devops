@@ -11,6 +11,7 @@ borrowRouter.post  ('/',                   borrowCtrl.borrowBook);
 borrowRouter.post  ('/return',             borrowCtrl.returnBook);
 borrowRouter.post  ('/:id/approve',        restrictTo('admin','librarian'), borrowCtrl.approveBorrow);
 borrowRouter.post  ('/:id/reject',         restrictTo('admin','librarian'), borrowCtrl.rejectBorrow);
+borrowRouter.post  ('/:id/cancel',         borrowCtrl.cancelBorrow);
 borrowRouter.get   ('/',                   borrowCtrl.getBorrowHistory);
 borrowRouter.get   ('/overdue',            restrictTo('admin','librarian'), borrowCtrl.getOverdueBooks);
 
@@ -173,6 +174,27 @@ notifRouter.put('/read-all', async (req, res) => {
     'UPDATE notifications SET is_read = TRUE WHERE user_id = $1', [req.user.id]
   );
   res.json({ success: true });
+});
+notifRouter.post('/admin', async (req, res) => {
+  const { title, message, type = 'info', userId, bookId } = req.body;
+  const { query } = require('../config/database');
+  
+  // Get all admins and librarians to send them notifications
+  const { rows: admins } = await query(
+    `SELECT u.id FROM users u JOIN roles r ON u.role_id = r.id WHERE r.name IN ('admin', 'librarian')`
+  );
+  
+  // Insert notification for each admin
+  const promises = admins.map(admin => 
+    query(
+      `INSERT INTO notifications (user_id, title, message, type, created_at, is_read)
+       VALUES ($1, $2, $3, $4, NOW(), FALSE)`,
+      [admin.id, title, message, type]
+    )
+  );
+  
+  await Promise.all(promises);
+  res.status(201).json({ success: true, message: 'Admin notification sent' });
 });
 
 // ═══════════════════════════════════════════

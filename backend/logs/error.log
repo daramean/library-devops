@@ -299,3 +299,320 @@
 [31m        at TCP.<anonymous> (node:net:350:12)[39m
 [31m  }[39m
 [31m}[39m 
+2026-06-24T04:00:31.363Z [[31merror[39m]: [31m{[39m
+[31m  err: Error: Database connection failed[39m
+[31m      at Object.<anonymous> (F:\library-devops-develop\backend\tests\fine.controller.test.js:475:38)[39m
+[31m      at Promise.then.completed (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:298:28)[39m
+[31m      at new Promise (<anonymous>)[39m
+[31m      at callAsyncCircusFn (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:231:10)[39m
+[31m      at _callCircusTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:316:40)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at _runTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:252:3)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:126:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at run (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:71:3)[39m
+[31m      at runAndTransformResultsToJestFormat (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)[39m
+[31m      at jestAdapter (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)[39m
+[31m      at runTestInternal (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:367:16)[39m
+[31m      at runTest (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:444:34),[39m
+[31m  url: '/api/v1/fines',[39m
+[31m  method: 'GET'[39m
+[31m}[39m 
+2026-06-24T04:00:57.051Z [[31merror[39m]: [31m{[39m
+[31m  err: Error: Database connection failed[39m
+[31m      at Object.<anonymous> (F:\library-devops-develop\backend\tests\fine.controller.test.js:478:38)[39m
+[31m      at Promise.then.completed (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:298:28)[39m
+[31m      at new Promise (<anonymous>)[39m
+[31m      at callAsyncCircusFn (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:231:10)[39m
+[31m      at _callCircusTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:316:40)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at _runTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:252:3)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:126:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at run (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:71:3)[39m
+[31m      at runAndTransformResultsToJestFormat (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)[39m
+[31m      at jestAdapter (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)[39m
+[31m      at runTestInternal (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:367:16)[39m
+[31m      at runTest (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:444:34),[39m
+[31m  url: '/api/v1/fines',[39m
+[31m  method: 'GET'[39m
+[31m}[39m 
+2026-06-24T07:23:19.983Z [[31merror[39m]: [31m{[39m
+[31m  err: [Error: ENOENT: no such file or directory, open 'F:\library-devops-develop\backend\public\uploads\1782285799982-image__4_.png'] {[39m
+[31m    errno: -4058,[39m
+[31m    code: 'ENOENT',[39m
+[31m    syscall: 'open',[39m
+[31m    path: 'F:\\library-devops-develop\\backend\\public\\uploads\\1782285799982-image__4_.png',[39m
+[31m    storageErrors: [][39m
+[31m  },[39m
+[31m  url: '/api/v1/books/d734a9f7-326d-443d-90f3-e03f44634417',[39m
+[31m  method: 'PUT'[39m
+[31m}[39m 
+2026-06-24T10:04:11.787Z [[31merror[39m]: [31m{[39m
+[31m  err: error: new row for relation "borrow_records" violates check constraint "borrow_records_status_check"[39m
+[31m      at F:\library-devops-develop\backend\node_modules\pg\lib\client.js:646:17[39m
+[31m      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at async exports.cancelBorrow (F:\library-devops-develop\backend\src\controllers\borrow.controller.js:457:5) {[39m
+[31m    length: 494,[39m
+[31m    severity: 'ERROR',[39m
+[31m    code: '23514',[39m
+[31m    detail: 'Failing row contains (8f9a7f12-351d-4870-91ea-c6da367a769e, bd9cf7a0-d9e0-44d9-b6dc-a64b96d40d3f, d734a9f7-326d-443d-90f3-e03f44634417, 2026-06-24 09:08:36.909+00, 2026-07-23 09:08:36.909+00, null, cancelled, null, null, 2026-06-24 09:08:36.897573+00, 2026-06-24 10:04:11.775787+00).',[39m
+[31m    hint: undefined,[39m
+[31m    position: undefined,[39m
+[31m    internalPosition: undefined,[39m
+[31m    internalQuery: undefined,[39m
+[31m    where: undefined,[39m
+[31m    schema: 'public',[39m
+[31m    table: 'borrow_records',[39m
+[31m    column: undefined,[39m
+[31m    dataType: undefined,[39m
+[31m    constraint: 'borrow_records_status_check',[39m
+[31m    file: 'execMain.c',[39m
+[31m    line: '2074',[39m
+[31m    routine: 'ExecConstraints'[39m
+[31m  },[39m
+[31m  url: '/api/v1/borrows/8f9a7f12-351d-4870-91ea-c6da367a769e/cancel',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-24T10:07:19.470Z [[31merror[39m]: [31m{[39m
+[31m  err: error: new row for relation "books" violates check constraint "available_lte_total"[39m
+[31m      at F:\library-devops-develop\backend\node_modules\pg\lib\client.js:646:17[39m
+[31m      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at async exports.cancelBorrow (F:\library-devops-develop\backend\src\controllers\borrow.controller.js:463:5) {[39m
+[31m    length: 552,[39m
+[31m    severity: 'ERROR',[39m
+[31m    code: '23514',[39m
+[31m    detail: 'Failing row contains (02cfd641-b34c-41cf-8c82-0d087d94b18e, 9, រាមកេរ្តិ៍ (Reamker), Ramayana, 0007, Phnom Penh, 1959, null, រាមកេរ្តិ៍ (Reamker) is the Cambodian adapta..., http://localhost:5000/uploads/1782286128211-_Reamker.jfif, 500, 501, , English, null, 30, null, t, 2026-06-23 04:22:50.119334+00, 2026-06-24 10:07:19.461898+00).',[39m
+[31m    hint: undefined,[39m
+[31m    position: undefined,[39m
+[31m    internalPosition: undefined,[39m
+[31m    internalQuery: undefined,[39m
+[31m    where: undefined,[39m
+[31m    schema: 'public',[39m
+[31m    table: 'books',[39m
+[31m    column: undefined,[39m
+[31m    dataType: undefined,[39m
+[31m    constraint: 'available_lte_total',[39m
+[31m    file: 'execMain.c',[39m
+[31m    line: '2074',[39m
+[31m    routine: 'ExecConstraints'[39m
+[31m  },[39m
+[31m  url: '/api/v1/borrows/d683ce1e-c827-474c-ae11-d68c4cd100ea/cancel',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-24T10:08:16.198Z [[31merror[39m]: [31m{[39m
+[31m  err: error: new row for relation "books" violates check constraint "available_lte_total"[39m
+[31m      at F:\library-devops-develop\backend\node_modules\pg\lib\client.js:646:17[39m
+[31m      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at async exports.cancelBorrow (F:\library-devops-develop\backend\src\controllers\borrow.controller.js:463:5) {[39m
+[31m    length: 552,[39m
+[31m    severity: 'ERROR',[39m
+[31m    code: '23514',[39m
+[31m    detail: 'Failing row contains (02cfd641-b34c-41cf-8c82-0d087d94b18e, 9, រាមកេរ្តិ៍ (Reamker), Ramayana, 0007, Phnom Penh, 1959, null, រាមកេរ្តិ៍ (Reamker) is the Cambodian adapta..., http://localhost:5000/uploads/1782286128211-_Reamker.jfif, 500, 501, , English, null, 30, null, t, 2026-06-23 04:22:50.119334+00, 2026-06-24 10:08:16.199532+00).',[39m
+[31m    hint: undefined,[39m
+[31m    position: undefined,[39m
+[31m    internalPosition: undefined,[39m
+[31m    internalQuery: undefined,[39m
+[31m    where: undefined,[39m
+[31m    schema: 'public',[39m
+[31m    table: 'books',[39m
+[31m    column: undefined,[39m
+[31m    dataType: undefined,[39m
+[31m    constraint: 'available_lte_total',[39m
+[31m    file: 'execMain.c',[39m
+[31m    line: '2074',[39m
+[31m    routine: 'ExecConstraints'[39m
+[31m  },[39m
+[31m  url: '/api/v1/borrows/d683ce1e-c827-474c-ae11-d68c4cd100ea/cancel',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-24T12:29:50.347Z [[31merror[39m]: [31m{[39m
+[31m  err: error: column "role" does not exist[39m
+[31m      at F:\library-devops-develop\backend\node_modules\pg-pool\index.js:45:11[39m
+[31m      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at async query (F:\library-devops-develop\backend\src\config\database.js:101:20)[39m
+[31m      at async F:\library-devops-develop\backend\src\routes\index.routes.js:183:28 {[39m
+[31m    length: 104,[39m
+[31m    severity: 'ERROR',[39m
+[31m    code: '42703',[39m
+[31m    detail: undefined,[39m
+[31m    hint: undefined,[39m
+[31m    position: '28',[39m
+[31m    internalPosition: undefined,[39m
+[31m    internalQuery: undefined,[39m
+[31m    where: undefined,[39m
+[31m    schema: undefined,[39m
+[31m    table: undefined,[39m
+[31m    column: undefined,[39m
+[31m    dataType: undefined,[39m
+[31m    constraint: undefined,[39m
+[31m    file: 'parse_relation.c',[39m
+[31m    line: '3665',[39m
+[31m    routine: 'errorMissingColumn'[39m
+[31m  },[39m
+[31m  url: '/api/v1/notifications/admin',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-24T12:34:20.292Z [[31merror[39m]: [31m{[39m
+[31m  err: error: column "role" does not exist[39m
+[31m      at F:\library-devops-develop\backend\node_modules\pg-pool\index.js:45:11[39m
+[31m      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at async query (F:\library-devops-develop\backend\src\config\database.js:101:20)[39m
+[31m      at async F:\library-devops-develop\backend\src\routes\index.routes.js:183:28 {[39m
+[31m    length: 104,[39m
+[31m    severity: 'ERROR',[39m
+[31m    code: '42703',[39m
+[31m    detail: undefined,[39m
+[31m    hint: undefined,[39m
+[31m    position: '28',[39m
+[31m    internalPosition: undefined,[39m
+[31m    internalQuery: undefined,[39m
+[31m    where: undefined,[39m
+[31m    schema: undefined,[39m
+[31m    table: undefined,[39m
+[31m    column: undefined,[39m
+[31m    dataType: undefined,[39m
+[31m    constraint: undefined,[39m
+[31m    file: 'parse_relation.c',[39m
+[31m    line: '3665',[39m
+[31m    routine: 'errorMissingColumn'[39m
+[31m  },[39m
+[31m  url: '/api/v1/notifications/admin',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-24T12:46:18.772Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-24T12:46:18.803Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-24T12:46:18.808Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-24T12:46:18.815Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-24T12:46:18.836Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-24T12:46:18.839Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-24T12:46:18.841Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-24T12:46:18.843Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-24T12:46:18.845Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-24T12:46:18.853Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[97]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:228:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/reset-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-24T12:46:18.859Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[97]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:228:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/reset-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-24T12:46:18.863Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[97]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:228:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/reset-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-24T12:46:18.875Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[97]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:228:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/reset-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-24T12:46:18.879Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[97]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:228:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/reset-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-24T12:46:18.888Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-24T12:46:18.894Z [[31merror[39m]: [31m{[39m
+[31m  err: TypeError: Cannot destructure property 'rows' of '((cov_1avwt6tem5(...).s[73]++) , (intermediate value))' as it is undefined.[39m
+[31m      at rows (F:\library-devops-develop\backend\src\controllers\auth.controller.js:164:11)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5),[39m
+[31m  url: '/api/v1/auth/forgot-password',[39m
+[31m  method: 'POST'[39m
+[31m}[39m 
+2026-06-24T12:46:18.968Z [[31merror[39m]: [31m{[39m
+[31m  err: Error: Database connection failed[39m
+[31m      at Object.<anonymous> (F:\library-devops-develop\backend\tests\fine.controller.test.js:478:38)[39m
+[31m      at Promise.then.completed (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:298:28)[39m
+[31m      at new Promise (<anonymous>)[39m
+[31m      at callAsyncCircusFn (F:\library-devops-develop\backend\node_modules\jest-circus\build\utils.js:231:10)[39m
+[31m      at _callCircusTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:316:40)[39m
+[31m      at processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
+[31m      at _runTest (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:252:3)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:126:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at _runTestsForDescribeBlock (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:121:9)[39m
+[31m      at run (F:\library-devops-develop\backend\node_modules\jest-circus\build\run.js:71:3)[39m
+[31m      at runAndTransformResultsToJestFormat (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)[39m
+[31m      at jestAdapter (F:\library-devops-develop\backend\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)[39m
+[31m      at runTestInternal (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:367:16)[39m
+[31m      at runTest (F:\library-devops-develop\backend\node_modules\jest-runner\build\runTest.js:444:34)[39m
+[31m      at Object.worker (F:\library-devops-develop\backend\node_modules\jest-runner\build\testWorker.js:106:12),[39m
+[31m  url: '/api/v1/fines',[39m
+[31m  method: 'GET'[39m
+[31m}[39m 
+2026-06-24T12:48:21.851Z [[31merror[39m]: [31mRedis error: read ECONNRESET[39m {"errno":-4077,"code":"ECONNRESET","syscall":"read","stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)"}

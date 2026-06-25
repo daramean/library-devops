@@ -150,7 +150,7 @@ function BookModal({ book, categories, onClose, onSaved }) {
         {/* Error Table - Show if there are field errors */}
         {Object.keys(fieldErrors).length > 0 && (
           <div className="p-6 bg-yellow-50 dark:bg-yellow-900/20 border-b border-yellow-200 dark:border-yellow-800">
-            <h3 className="text-sm font-semibold text-yellow-800 dark:text-yellow-200 mb-3">⚠️ Field Errors</h3>
+            <h3 className="text-sm font-semibold text-yellow-800 dark:text-yellow-200 mb-3">Field Errors</h3>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
@@ -344,7 +344,7 @@ export default function AdminBooks() {
       <div className="card overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
-            <thead className="bg-gray-50 dark:bg-gray-800/50">
+            <thead className="sticky top-0 z-10 bg-gray-50 dark:bg-gray-800/50">
               <tr className="text-left text-xs text-gray-500">
                 {['Cover','Title','Author','Category','ISBN','Copies','Available',''].map(h => (
                   <th key={h} className="px-4 py-3 font-medium">{h}</th>

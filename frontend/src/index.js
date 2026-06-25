@@ -27,6 +27,8 @@ import UserProfile      from './pages/user/Profile';
 // Auth
 import Login            from './pages/auth/Login';
 import Register         from './pages/auth/Register';
+import ForgotPassword   from './pages/auth/ForgotPassword';
+import ResetPassword    from './pages/auth/ResetPassword';
 
 function ProtectedRoute({ children, adminOnly = false }) {
   const { user, loading } = useAuth();
@@ -41,8 +43,10 @@ function App() {
   return (
     <Routes>
       {/* Auth */}
-      <Route path="/login"    element={user ? <Navigate to={user.role === 'admin' ? '/admin' : '/dashboard'} /> : <Login />} />
-      <Route path="/register" element={user ? <Navigate to="/dashboard" /> : <Register />} />
+      <Route path="/login"             element={user ? <Navigate to={user.role === 'admin' ? '/admin' : '/dashboard'} /> : <Login />} />
+      <Route path="/register"          element={user ? <Navigate to="/dashboard" /> : <Register />} />
+      <Route path="/forgot-password"   element={user ? <Navigate to="/dashboard" /> : <ForgotPassword />} />
+      <Route path="/reset-password/:token" element={user ? <Navigate to="/dashboard" /> : <ResetPassword />} />
 
       {/* Admin */}
       <Route path="/admin" element={<ProtectedRoute adminOnly><AdminLayout /></ProtectedRoute>}>

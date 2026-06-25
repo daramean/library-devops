@@ -25,7 +25,7 @@ export const normalizeCoverUrl = (url) => {
   const trimmed = url.trim();
   if (!trimmed) return null;
 
-  const normalized = trimmed.replace(/\\s+/g, '');
+  const normalized = trimmed.replace(/\s+/g, '');
   const lower = normalized.toLowerCase();
   if (['n/a', 'null'].includes(lower)) return null;
 

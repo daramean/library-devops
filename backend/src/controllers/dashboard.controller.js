@@ -61,7 +61,7 @@ exports.getUserStats = async (req, res) => {
            FROM borrow_records br JOIN books b ON br.book_id = b.id
            WHERE br.user_id = $1 AND br.status IN ('borrowed','overdue')
            ORDER BY br.due_date ASC`, [uid]),
-    query(`SELECT COUNT(*) AS total FROM borrow_records WHERE user_id = $1`, [uid]),
+    query(`SELECT COUNT(*) AS total FROM borrow_records WHERE user_id = $1 AND status IN ('borrowed','overdue','pending')`, [uid]),
     query(`SELECT br.*, b.title, b.cover_url FROM borrow_records br
            JOIN books b ON br.book_id = b.id
            WHERE br.user_id = $1 AND br.status = 'borrowed'
