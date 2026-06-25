@@ -449,37 +449,33 @@ exports.cancelBorrow = async (req, res) => {
   const { id } = req.params;
   const user_id = req.user.id;
 
-  try {
-    // Get the borrow record
-    const { rows: borrowRows } = await query(
-      'SELECT * FROM borrow_records WHERE id = $1 AND user_id = $2',
-      [id, user_id],
-    );
+  // Get the borrow record
+  const { rows: borrowRows } = await query(
+    'SELECT * FROM borrow_records WHERE id = $1 AND user_id = $2',
+    [id, user_id],
+  );
 
-    if (!borrowRows.length) {
-      throw new AppError('Borrow record not found', 404);
-    }
-
-    const borrow = borrowRows[0];
-
-    // Check if status is pending
-    if (borrow.status !== 'pending') {
-      throw new AppError('Only pending borrow requests can be cancelled', 400);
-    }
-
-    // Update borrow status to cancelled
-    // Note: We don't need to restore available_copies since pending borrows
-    // don't decrement copies in the first place
-    await query(
-      'UPDATE borrow_records SET status = \'cancelled\' WHERE id = $1',
-      [id],
-    );
-
-    // Log activity
-    await logActivity(user_id, 'cancelled_borrow', `Cancelled borrow request for book ID ${borrow.book_id}`);
-
-    res.json({ success: true, message: 'Borrow request cancelled successfully' });
-  } catch (error) {
-    throw error; // Re-throw for error handler
+  if (!borrowRows.length) {
+    throw new AppError('Borrow record not found', 404);
   }
+
+  const borrow = borrowRows[0];
+
+  // Check if status is pending
+  if (borrow.status !== 'pending') {
+    throw new AppError('Only pending borrow requests can be cancelled', 400);
+  }
+
+  // Update borrow status to cancelled
+  // Note: We don't need to restore available_copies since pending borrows
+  // don't decrement copies in the first place
+  await query(
+    'UPDATE borrow_records SET status = \'cancelled\' WHERE id = $1',
+    [id],
+  );
+
+  // Log activity
+  await logActivity(user_id, 'cancelled_borrow', `Cancelled borrow request for book ID ${borrow.book_id}`);
+
+  res.json({ success: true, message: 'Borrow request cancelled successfully' });
 };
