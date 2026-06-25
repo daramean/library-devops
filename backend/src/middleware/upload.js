@@ -10,7 +10,7 @@ const storage = multer.diskStorage({
   filename: (req, file, cb) => {
     const safe = Date.now() + '-' + file.originalname.replace(/[^a-zA-Z0-9.\-_]/g, '_');
     cb(null, safe);
-  }
+  },
 });
 
 const allowedMimeTypes = ['image/png', 'image/jpeg', 'image/jpg', 'image/pjpeg'];

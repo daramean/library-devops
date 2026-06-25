@@ -6,9 +6,9 @@ exports.getAdminStats = async (req, res) => {
     query(`SELECT COUNT(*) AS total, SUM(available_copies) AS available,
                   SUM(total_copies - available_copies) AS borrowed
            FROM books WHERE is_active = TRUE`),
-    query(`SELECT COUNT(*) AS total FROM users WHERE is_active = TRUE`),
-    query(`SELECT COUNT(*) AS total FROM borrow_records WHERE status IN ('borrowed','overdue')`),
-    query(`SELECT COUNT(*) AS total FROM borrow_records WHERE status = 'overdue'`),
+    query('SELECT COUNT(*) AS total FROM users WHERE is_active = TRUE'),
+    query('SELECT COUNT(*) AS total FROM borrow_records WHERE status IN (\'borrowed\',\'overdue\')'),
+    query('SELECT COUNT(*) AS total FROM borrow_records WHERE status = \'overdue\''),
     query(`SELECT COALESCE(SUM(amount),0) AS total, COUNT(*) AS count
            FROM fines WHERE is_paid = FALSE`),
     query(`SELECT br.id, u.full_name, b.title, br.borrowed_at, br.due_date, br.status
@@ -24,7 +24,7 @@ exports.getAdminStats = async (req, res) => {
      FROM categories c
      LEFT JOIN books b ON b.category_id = c.id
      LEFT JOIN borrow_records br ON br.book_id = b.id
-     GROUP BY c.name ORDER BY borrows DESC LIMIT 8`
+     GROUP BY c.name ORDER BY borrows DESC LIMIT 8`,
   );
 
   // Monthly trend (last 6 months)
@@ -34,17 +34,17 @@ exports.getAdminStats = async (req, res) => {
      FROM borrow_records
      WHERE borrowed_at >= NOW() - INTERVAL '6 months'
      GROUP BY month, DATE_TRUNC('month', borrowed_at)
-     ORDER BY DATE_TRUNC('month', borrowed_at)`
+     ORDER BY DATE_TRUNC('month', borrowed_at)`,
   );
 
   res.json({
     success: true,
     data: {
-      books:        books.rows[0],
-      users:        users.rows[0],
-      activeBorrows:borrows.rows[0].total,
-      overdue:      overdue.rows[0].total,
-      fines:        fines.rows[0],
+      books: books.rows[0],
+      users: users.rows[0],
+      activeBorrows: borrows.rows[0].total,
+      overdue: overdue.rows[0].total,
+      fines: fines.rows[0],
       recentActivity: recent.rows,
       categoryStats,
       monthlyTrend,
@@ -61,7 +61,7 @@ exports.getUserStats = async (req, res) => {
            FROM borrow_records br JOIN books b ON br.book_id = b.id
            WHERE br.user_id = $1 AND br.status IN ('borrowed','overdue')
            ORDER BY br.due_date ASC`, [uid]),
-    query(`SELECT COUNT(*) AS total FROM borrow_records WHERE user_id = $1 AND status IN ('borrowed','overdue','pending')`, [uid]),
+    query('SELECT COUNT(*) AS total FROM borrow_records WHERE user_id = $1 AND status IN (\'borrowed\',\'overdue\',\'pending\')', [uid]),
     query(`SELECT br.*, b.title, b.cover_url FROM borrow_records br
            JOIN books b ON br.book_id = b.id
            WHERE br.user_id = $1 AND br.status = 'borrowed'
@@ -80,11 +80,11 @@ exports.getUserStats = async (req, res) => {
   res.json({
     success: true,
     data: {
-      activeBorrows:  active.rows,
-      totalBorrowed:  history.rows[0].total,
-      dueSoon:        dueSoon.rows,
-      unpaidFines:    fines.rows[0].total,
-      recommended:    recommended.rows,
+      activeBorrows: active.rows,
+      totalBorrowed: history.rows[0].total,
+      dueSoon: dueSoon.rows,
+      unpaidFines: fines.rows[0].total,
+      recommended: recommended.rows,
     },
   });
 };

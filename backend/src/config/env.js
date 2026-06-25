@@ -33,7 +33,7 @@ const missing = requiredVars.filter((name) => {
 if (missing.length > 0) {
   throw new Error(
     `Missing required environment variables: ${missing.join(', ')}. ` +
-    'Update your .env file or GitHub Secrets and restart the application.'
+    'Update your .env file or GitHub Secrets and restart the application.',
   );
 }
 

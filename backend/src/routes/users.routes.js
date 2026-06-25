@@ -13,8 +13,8 @@ userRouter.get('/', protect, restrictTo('admin'), (req, res) => {
     message: 'Users list fetched successfully',
     data: [
       { id: 1, name: 'Admin User', email: 'admin@example.com', role: 'admin' },
-      { id: 2, name: 'Test User', email: 'user@example.com', role: 'user' }
-    ]
+      { id: 2, name: 'Test User', email: 'user@example.com', role: 'user' },
+    ],
   });
 });
 
@@ -27,8 +27,8 @@ userRouter.get('/:id', protect, (req, res) => {
       id: req.params.id,
       name: 'Test User',
       email: 'user@example.com',
-      role: 'user'
-    }
+      role: 'user',
+    },
   });
 });
 
@@ -41,8 +41,8 @@ userRouter.get('/profile/me', protect, (req, res) => {
       id: req.user.id,
       name: 'Current User',
       email: req.user.email,
-      role: req.user.role
-    }
+      role: req.user.role,
+    },
   });
 });
 
@@ -51,7 +51,7 @@ userRouter.put('/:id', protect, (req, res) => {
   res.status(200).json({
     success: true,
     message: 'User updated successfully',
-    data: { id: req.params.id, ...req.body }
+    data: { id: req.params.id, ...req.body },
   });
 });
 
@@ -60,7 +60,7 @@ userRouter.delete('/:id', protect, restrictTo('admin'), (req, res) => {
   res.status(200).json({
     success: true,
     message: 'User deleted successfully',
-    data: { id: req.params.id }
+    data: { id: req.params.id },
   });
 });
 

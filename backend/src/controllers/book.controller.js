@@ -1,4 +1,4 @@
-const { query, getClient } = require('../config/database');
+const { query } = require('../config/database');
 const AppError = require('../utils/AppError');
 const { logActivity } = require('../utils/activityLogger');
 const ExcelJS = require('exceljs');
@@ -27,7 +27,7 @@ exports.getBooks = async (req, res) => {
   const {
     search, category_id, available,
     page = 1, limit = 20,
-    sort = 'created_at', order = 'DESC'
+    sort = 'created_at', order = 'DESC',
   } = req.query;
 
   const offset = (parseInt(page) - 1) * parseInt(limit);
@@ -69,7 +69,7 @@ exports.getBooks = async (req, res) => {
        WHERE ${where}
        ORDER BY b.${safeSort} ${safeOrder}
        LIMIT $${idx} OFFSET $${idx + 1}`,
-      [...params, parseInt(limit), offset]
+      [...params, parseInt(limit), offset],
     ),
     query(`SELECT COUNT(*) FROM books b WHERE ${where}`, params),
   ]);
@@ -94,7 +94,7 @@ exports.getBook = async (req, res) => {
      FROM books b
      LEFT JOIN categories c ON b.category_id = c.id
      WHERE b.id = $1 AND b.is_active = TRUE`,
-    [req.params.id]
+    [req.params.id],
   );
   if (!rows[0]) throw new AppError('Book not found', 404);
   res.json({ success: true, data: rows[0] });
@@ -152,7 +152,7 @@ exports.createBook = async (req, res) => {
 
   // Try to insert with all fields first
   try {
-     const { rows } = await query(
+    const { rows } = await query(
       `INSERT INTO books
         (category_id, title, author, isbn, publisher, publish_year,
          description, cover_url, total_copies, available_copies,
@@ -160,15 +160,15 @@ exports.createBook = async (req, res) => {
        VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$9,$10,$11,$12,$13,$14)
        RETURNING *`,
       [sanitizedCategoryId, title, author, finalIsbn, publisher, sanitizedPublishYear,
-      description, finalCoverUrl, sanitizedTotalCopies,
-       location, language || 'English', sanitizedPages, sanitizedTags, sanitizedDefaultLoanDays]
-     );
+        description, finalCoverUrl, sanitizedTotalCopies,
+        location, language || 'English', sanitizedPages, sanitizedTags, sanitizedDefaultLoanDays],
+    );
 
     await logActivity(req.user.id, 'book.create', 'book', rows[0].id, req, { title });
-    return res.status(201).json({ 
-      success: true, 
+    return res.status(201).json({
+      success: true,
       data: rows[0],
-      errors: {} // No errors
+      errors: {}, // No errors
     });
   } catch (err) {
     // Handle unique constraint violation on ISBN (error code 23505)
@@ -183,29 +183,25 @@ exports.createBook = async (req, res) => {
 
   // If we have ISBN error, retry without ISBN
   if (Object.keys(fieldErrors).length > 0) {
-    try {
-      const { rows } = await query(
-        `INSERT INTO books
-          (category_id, title, author, isbn, publisher, publish_year,
-          description, cover_url, total_copies, available_copies,
-          location, language, pages, tags, default_loan_days)
-        VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$9,$10,$11,$12,$13,$14)
-        RETURNING *`,
-        [sanitizedCategoryId, title, author, finalIsbn, publisher, sanitizedPublishYear,
+    const { rows } = await query(
+      `INSERT INTO books
+        (category_id, title, author, isbn, publisher, publish_year,
+        description, cover_url, total_copies, available_copies,
+        location, language, pages, tags, default_loan_days)
+      VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$9,$10,$11,$12,$13,$14)
+      RETURNING *`,
+      [sanitizedCategoryId, title, author, finalIsbn, publisher, sanitizedPublishYear,
         description, finalCoverUrl, sanitizedTotalCopies,
-       location, language || 'English', sanitizedPages, sanitizedTags, sanitizedDefaultLoanDays]
-      );
+        location, language || 'English', sanitizedPages, sanitizedTags, sanitizedDefaultLoanDays],
+    );
 
-      await logActivity(req.user.id, 'book.create', 'book', rows[0].id, req, { title });
-      // Return 201 even with errors, but include the errors object
-      return res.status(201).json({ 
-        success: true, 
-        data: rows[0],
-        errors: fieldErrors // Include field errors
-      });
-    } catch (retryErr) {
-      throw retryErr;
-    }
+    await logActivity(req.user.id, 'book.create', 'book', rows[0].id, req, { title });
+    // Return 201 even with errors, but include the errors object
+    return res.status(201).json({
+      success: true,
+      data: rows[0],
+      errors: fieldErrors, // Include field errors
+    });
   }
 };
 
@@ -219,7 +215,7 @@ exports.updateBook = async (req, res) => {
   }
   const allowed = [
     'category_id','title','author','isbn','publisher','publish_year',
-    'description','cover_url','total_copies','location','language','pages','tags','is_active','default_loan_days'
+    'description','cover_url','total_copies','location','language','pages','tags','is_active','default_loan_days',
   ];
   const fields  = [];
   const values  = [];
@@ -271,7 +267,7 @@ exports.updateBook = async (req, res) => {
   values.push(req.params.id);
   const { rows } = await query(
     `UPDATE books SET ${fields.join(', ')} WHERE id = $${idx} AND is_active = TRUE RETURNING *`,
-    values
+    values,
   );
   if (!rows[0]) throw new AppError('Book not found', 404);
 
@@ -282,8 +278,8 @@ exports.updateBook = async (req, res) => {
 // ── Delete Book (soft) ────────────────────────────────
 exports.deleteBook = async (req, res) => {
   const { rows } = await query(
-    `UPDATE books SET is_active = FALSE WHERE id = $1 RETURNING id, title`,
-    [req.params.id]
+    'UPDATE books SET is_active = FALSE WHERE id = $1 RETURNING id, title',
+    [req.params.id],
   );
   if (!rows[0]) throw new AppError('Book not found', 404);
   await logActivity(req.user.id, 'book.delete', 'book', req.params.id, req);
@@ -296,7 +292,7 @@ exports.exportBooks = async (req, res) => {
     `SELECT b.title, b.author, b.isbn, c.name AS category,
             b.total_copies, b.available_copies, b.location, b.publish_year
      FROM books b LEFT JOIN categories c ON b.category_id = c.id
-     WHERE b.is_active = TRUE ORDER BY b.title`
+     WHERE b.is_active = TRUE ORDER BY b.title`,
   );
 
   const workbook = new ExcelJS.Workbook();

@@ -15,7 +15,7 @@ function createPool(host) {
     database: defaultDatabase,
     user: defaultUser,
     password: defaultPassword,
-    max:      20,           // max connections in pool
+    max: 20,           // max connections in pool
     idleTimeoutMillis: 30000,
     connectionTimeoutMillis: 2000,
     ssl: process.env.NODE_ENV === 'production'

@@ -24,7 +24,7 @@ exports.borrowBook = async (req, res) => {
     const { rows: activeRows } = await client.query(
       `SELECT COUNT(*) FROM borrow_records
        WHERE user_id = $1 AND status = 'borrowed'`,
-      [user_id]
+      [user_id],
     );
     if (parseInt(activeRows[0].count) >= MAX_BORROW) {
       throw new AppError(`Cannot borrow more than ${MAX_BORROW} books at once`, 400);
@@ -34,12 +34,12 @@ exports.borrowBook = async (req, res) => {
     const { rows: fineRows } = await client.query(
       `SELECT COALESCE(SUM(amount),0) AS total FROM fines
        WHERE user_id = $1 AND is_paid = FALSE`,
-      [user_id]
+      [user_id],
     );
     if (parseFloat(fineRows[0].total) > 0) {
       throw new AppError(
         `You have unpaid fines of $${fineRows[0].total}. Please settle before borrowing.`,
-        400
+        400,
       );
     }
 
@@ -47,7 +47,7 @@ exports.borrowBook = async (req, res) => {
     const { rows: bookRows } = await client.query(
       `SELECT id, title, available_copies, default_loan_days FROM books
        WHERE id = $1 AND is_active = TRUE FOR UPDATE`,
-      [book_id]
+      [book_id],
     );
     const book = bookRows[0];
     if (!book)                    throw new AppError('Book not found', 404);
@@ -58,7 +58,7 @@ exports.borrowBook = async (req, res) => {
     const { rows: dupRows } = await client.query(
       `SELECT id FROM borrow_records
        WHERE user_id = $1 AND book_id = $2 AND status NOT IN ('cancelled','rejected','returned')`,
-      [user_id, book_id]
+      [user_id, book_id],
     );
     if (dupRows.length) {
       throw new AppError('You already have a borrow or pending request for this book', 400);
@@ -92,13 +92,13 @@ exports.borrowBook = async (req, res) => {
       `INSERT INTO borrow_records (user_id, book_id, borrowed_at, due_date, status, approved_by)
        VALUES ($1, $2, $3, $4, $5, $6)
        RETURNING *`,
-      [user_id, book_id, borrowed_at, due_date, status, approvedBy]
+      [user_id, book_id, borrowed_at, due_date, status, approvedBy],
     );
 
     if (isAutoApproved) {
       await client.query(
-        `UPDATE books SET available_copies = available_copies - 1 WHERE id = $1`,
-        [book_id]
+        'UPDATE books SET available_copies = available_copies - 1 WHERE id = $1',
+        [book_id],
       );
     }
 
@@ -129,8 +129,8 @@ exports.borrowBook = async (req, res) => {
         const adminTitle = 'New Borrow Request';
         const adminMessage = `${actorName} has requested to borrow "${book.title}".`;
         sendAdminNotifications({ title: adminTitle, message: adminMessage, type: 'borrow' });
-      } catch (e) {
-        console.error('Failed to build/send admin notification:', e.message);
+      } catch (_err) {
+        // Silently skip admin notification errors
       }
     }
   } catch (err) {
@@ -153,7 +153,7 @@ exports.approveBorrow = async (req, res) => {
        FROM borrow_records br
        JOIN books b ON br.book_id = b.id
        WHERE br.id = $1 FOR UPDATE`,
-      [id]
+      [id],
     );
     const borrow = borrowRows[0];
     if (!borrow) throw new AppError('Borrow request not found', 404);
@@ -167,7 +167,7 @@ exports.approveBorrow = async (req, res) => {
     const { rows: activeRows } = await client.query(
       `SELECT COUNT(*) FROM borrow_records
        WHERE user_id = $1 AND status = 'borrowed'`,
-      [borrow.user_id]
+      [borrow.user_id],
     );
     if (parseInt(activeRows[0].count) >= MAX_BORROW) {
       throw new AppError(`User cannot borrow more than ${MAX_BORROW} books at once`, 400);
@@ -176,7 +176,7 @@ exports.approveBorrow = async (req, res) => {
     const { rows: fineRows } = await client.query(
       `SELECT COALESCE(SUM(amount),0) AS total FROM fines
        WHERE user_id = $1 AND is_paid = FALSE`,
-      [borrow.user_id]
+      [borrow.user_id],
     );
     if (parseFloat(fineRows[0].total) > 0) {
       throw new AppError('User has unpaid fines and cannot be approved until they are settled', 400);
@@ -194,12 +194,12 @@ exports.approveBorrow = async (req, res) => {
       `UPDATE borrow_records
        SET status = 'borrowed', approved_by = $1, borrowed_at = $2, due_date = $3
        WHERE id = $4`,
-      [req.user.id, now, due_date, id]
+      [req.user.id, now, due_date, id],
     );
 
     await client.query(
-      `UPDATE books SET available_copies = available_copies - 1 WHERE id = $1`,
-      [borrow.book_id]
+      'UPDATE books SET available_copies = available_copies - 1 WHERE id = $1',
+      [borrow.book_id],
     );
 
     await client.query('COMMIT');
@@ -237,7 +237,7 @@ exports.rejectBorrow = async (req, res) => {
        FROM borrow_records br
        JOIN books b ON br.book_id = b.id
        WHERE br.id = $1 FOR UPDATE`,
-      [id]
+      [id],
     );
     const borrow = borrowRows[0];
     if (!borrow) throw new AppError('Borrow request not found', 404);
@@ -249,7 +249,7 @@ exports.rejectBorrow = async (req, res) => {
       `UPDATE borrow_records
        SET status = 'rejected', approved_by = $1
        WHERE id = $2`,
-      [req.user.id, id]
+      [req.user.id, id],
     );
 
     await client.query('COMMIT');
@@ -288,7 +288,7 @@ exports.returnBook = async (req, res) => {
        FROM borrow_records br
        JOIN books b ON br.book_id = b.id
        WHERE br.id = $1 AND br.status = 'borrowed' FOR UPDATE`,
-      [borrow_id]
+      [borrow_id],
     );
     const borrow = borrowRows[0];
     if (!borrow) throw new AppError('Active borrow record not found', 404);
@@ -329,14 +329,14 @@ exports.returnBook = async (req, res) => {
       `UPDATE borrow_records
        SET status = 'returned', returned_at = $1
        WHERE id = $2`,
-      [returnedAt, borrow_id]
+      [returnedAt, borrow_id],
     );
 
     // Create return record
     await client.query(
       `INSERT INTO return_records (borrow_id, user_id, book_id, condition, processed_by, notes)
        VALUES ($1, $2, $3, $4, $5, $6)`,
-      [borrow_id, borrow.user_id, borrow.book_id, condition, req.user.id, notes || null]
+      [borrow_id, borrow.user_id, borrow.book_id, condition, req.user.id, notes || null],
     );
 
     // Create fine if applicable
@@ -346,7 +346,7 @@ exports.returnBook = async (req, res) => {
         `INSERT INTO fines (borrow_id, user_id, amount, reason, days_overdue)
          VALUES ($1, $2, $3, $4, $5) RETURNING *`,
         [borrow_id, borrow.user_id, fineAmount,
-         condition !== 'good' ? condition : 'overdue', daysOverdue]
+          condition !== 'good' ? condition : 'overdue', daysOverdue],
       );
       fine = fineRows[0];
     }
@@ -354,8 +354,8 @@ exports.returnBook = async (req, res) => {
     // Increment available copies (unless lost)
     if (condition !== 'lost') {
       await client.query(
-        `UPDATE books SET available_copies = available_copies + 1 WHERE id = $1`,
-        [borrow.book_id]
+        'UPDATE books SET available_copies = available_copies + 1 WHERE id = $1',
+        [borrow.book_id],
       );
     }
 
@@ -370,9 +370,9 @@ exports.returnBook = async (req, res) => {
     // Fire off notification and activity logging (non-critical, don't await)
     if (fine) {
       sendNotification(borrow.user_id, {
-        title:   'Fine Issued',
+        title: 'Fine Issued',
         message: `A fine of $${fineAmount.toFixed(2)} has been applied for "${borrow.book_title}".`,
-        type:    'fine',
+        type: 'fine',
       });
     }
     logActivity(req.user.id, 'book.return', 'return_record', borrow_id, req);
@@ -413,7 +413,7 @@ exports.getBorrowHistory = async (req, res) => {
      ${where}
      ORDER BY br.created_at DESC
      LIMIT $${idx} OFFSET $${idx + 1}`,
-    [...params, parseInt(limit), offset]
+    [...params, parseInt(limit), offset],
   );
 
   res.json({ success: true, data: rows });
@@ -430,14 +430,14 @@ exports.getOverdueBooks = async (req, res) => {
      JOIN books b ON br.book_id = b.id
      JOIN users u ON br.user_id = u.id
      WHERE br.status = 'borrowed' AND br.due_date < NOW()
-     ORDER BY br.due_date ASC`
+     ORDER BY br.due_date ASC`,
   );
 
   // Auto-mark as overdue
   if (rows.length) {
     await query(
       `UPDATE borrow_records SET status = 'overdue'
-       WHERE status = 'borrowed' AND due_date < NOW()`
+       WHERE status = 'borrowed' AND due_date < NOW()`,
     );
   }
 
@@ -452,8 +452,8 @@ exports.cancelBorrow = async (req, res) => {
   try {
     // Get the borrow record
     const { rows: borrowRows } = await query(
-      `SELECT * FROM borrow_records WHERE id = $1 AND user_id = $2`,
-      [id, user_id]
+      'SELECT * FROM borrow_records WHERE id = $1 AND user_id = $2',
+      [id, user_id],
     );
 
     if (!borrowRows.length) {
@@ -471,15 +471,15 @@ exports.cancelBorrow = async (req, res) => {
     // Note: We don't need to restore available_copies since pending borrows
     // don't decrement copies in the first place
     await query(
-      `UPDATE borrow_records SET status = 'cancelled' WHERE id = $1`,
-      [id]
+      'UPDATE borrow_records SET status = \'cancelled\' WHERE id = $1',
+      [id],
     );
 
     // Log activity
     await logActivity(user_id, 'cancelled_borrow', `Cancelled borrow request for book ID ${borrow.book_id}`);
 
     res.json({ success: true, message: 'Borrow request cancelled successfully' });
-  } catch (err) {
-    throw err;
+  } catch (error) {
+    throw error; // Re-throw for error handler
   }
 };

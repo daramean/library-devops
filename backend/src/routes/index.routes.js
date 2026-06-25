@@ -39,7 +39,7 @@ catRouter.post('/', protect, restrictTo('admin'), async (req, res) => {
   const { name, description, color } = req.body;
   const { rows } = await query(
     'INSERT INTO categories (name, description, color) VALUES ($1,$2,$3) RETURNING *',
-    [name, description, color]
+    [name, description, color],
   );
   res.status(201).json({ success: true, data: rows[0] });
 });
@@ -59,7 +59,7 @@ userRouter.get('/', restrictTo('admin'), async (req, res) => {
              FROM users u JOIN roles r ON u.role_id = r.id`;
   const params = [];
   if (search) {
-    sql += ` WHERE u.full_name ILIKE $1 OR u.email ILIKE $1`;
+    sql += ' WHERE u.full_name ILIKE $1 OR u.email ILIKE $1';
     params.push(`%${search}%`);
   }
   sql += ` ORDER BY u.created_at DESC LIMIT $${params.length+1} OFFSET $${params.length+2}`;
@@ -91,7 +91,7 @@ userRouter.post('/', restrictTo('admin'), async (req, res) => {
     `INSERT INTO users (full_name, email, password_hash, phone, role_id)
      VALUES ($1, $2, $3, $4, $5)
      RETURNING id, full_name, email, phone, is_active, created_at`,
-    [full_name, email, passwordHash, phone || null, roleId]
+    [full_name, email, passwordHash, phone || null, roleId],
   );
 
   res.status(201).json({ success: true, data: rows[0] });
@@ -100,7 +100,7 @@ userRouter.post('/', restrictTo('admin'), async (req, res) => {
 userRouter.put('/:id/toggle', restrictTo('admin'), async (req, res) => {
   const { rows } = await require('../config/database').query(
     'UPDATE users SET is_active = NOT is_active WHERE id = $1 RETURNING id, is_active',
-    [req.params.id]
+    [req.params.id],
   );
   res.json({ success: true, data: rows[0] });
 });
@@ -118,7 +118,7 @@ userRouter.put('/:id/password', restrictTo('admin'), async (req, res) => {
 
   const { rows } = await db.query(
     'UPDATE users SET password_hash = $1 WHERE id = $2 RETURNING id, full_name, email',
-    [passwordHash, req.params.id]
+    [passwordHash, req.params.id],
   );
 
   if (!rows.length) {
@@ -152,7 +152,7 @@ fineRouter.get('/', async (req, res) => {
 fineRouter.post('/:id/pay', restrictTo('admin'), async (req, res) => {
   const { rows } = await require('../config/database').query(
     `UPDATE fines SET is_paid = TRUE, paid_at = NOW()
-     WHERE id = $1 RETURNING *`, [req.params.id]
+     WHERE id = $1 RETURNING *`, [req.params.id],
   );
   res.json({ success: true, data: rows[0] });
 });
@@ -165,34 +165,34 @@ notifRouter.use(protect);
 notifRouter.get('/', async (req, res) => {
   const { rows } = await require('../config/database').query(
     `SELECT * FROM notifications WHERE user_id = $1
-     ORDER BY created_at DESC LIMIT 50`, [req.user.id]
+     ORDER BY created_at DESC LIMIT 50`, [req.user.id],
   );
   res.json({ success: true, data: rows });
 });
 notifRouter.put('/read-all', async (req, res) => {
   await require('../config/database').query(
-    'UPDATE notifications SET is_read = TRUE WHERE user_id = $1', [req.user.id]
+    'UPDATE notifications SET is_read = TRUE WHERE user_id = $1', [req.user.id],
   );
   res.json({ success: true });
 });
-notifRouter.post('/admin', async (req, res) => {
-  const { title, message, type = 'info', userId, bookId } = req.body;
+notifRouter.post('/admin', async (req, res, _next) => {
+  const { title, message, type = 'info' } = req.body;
   const { query } = require('../config/database');
-  
+
   // Get all admins and librarians to send them notifications
   const { rows: admins } = await query(
-    `SELECT u.id FROM users u JOIN roles r ON u.role_id = r.id WHERE r.name IN ('admin', 'librarian')`
+    'SELECT u.id FROM users u JOIN roles r ON u.role_id = r.id WHERE r.name IN (\'admin\', \'librarian\')',
   );
-  
+
   // Insert notification for each admin
-  const promises = admins.map(admin => 
+  const promises = admins.map(admin =>
     query(
       `INSERT INTO notifications (user_id, title, message, type, created_at, is_read)
        VALUES ($1, $2, $3, $4, NOW(), FALSE)`,
-      [admin.id, title, message, type]
-    )
+      [admin.id, title, message, type],
+    ),
   );
-  
+
   await Promise.all(promises);
   res.status(201).json({ success: true, message: 'Admin notification sent' });
 });
@@ -206,7 +206,7 @@ actRouter.get('/', async (req, res) => {
   const { rows } = await require('../config/database').query(
     `SELECT al.*, u.full_name, u.email FROM activity_logs al
      LEFT JOIN users u ON al.user_id = u.id
-     ORDER BY al.created_at DESC LIMIT 100`
+     ORDER BY al.created_at DESC LIMIT 100`,
   );
   res.json({ success: true, data: rows });
 });
@@ -219,8 +219,8 @@ resRouter.use(protect);
 resRouter.post('/', async (req, res) => {
   const { book_id } = req.body;
   const { rows } = await require('../config/database').query(
-    `INSERT INTO reservations (user_id, book_id) VALUES ($1,$2) RETURNING *`,
-    [req.user.id, book_id]
+    'INSERT INTO reservations (user_id, book_id) VALUES ($1,$2) RETURNING *',
+    [req.user.id, book_id],
   );
   res.status(201).json({ success: true, data: rows[0] });
 });
@@ -228,25 +228,25 @@ resRouter.get('/', async (req, res) => {
   const { rows } = await require('../config/database').query(
     `SELECT r.*, b.title, b.author, b.cover_url FROM reservations r
      JOIN books b ON r.book_id = b.id
-     WHERE r.user_id = $1 AND r.status = 'pending'`, [req.user.id]
+     WHERE r.user_id = $1 AND r.status = 'pending'`, [req.user.id],
   );
   res.json({ success: true, data: rows });
 });
 resRouter.delete('/:id', async (req, res) => {
   await require('../config/database').query(
-    `UPDATE reservations SET status='cancelled' WHERE id=$1 AND user_id=$2`,
-    [req.params.id, req.user.id]
+    'UPDATE reservations SET status=\'cancelled\' WHERE id=$1 AND user_id=$2',
+    [req.params.id, req.user.id],
   );
   res.json({ success: true });
 });
 
 module.exports = {
-  borrowRoutes:       borrowRouter,
-  dashboardRoutes:    dashRouter,
-  categoryRoutes:     catRouter,
-  userRoutes:         userRouter,
-  fineRoutes:         fineRouter,
+  borrowRoutes: borrowRouter,
+  dashboardRoutes: dashRouter,
+  categoryRoutes: catRouter,
+  userRoutes: userRouter,
+  fineRoutes: fineRouter,
   notificationRoutes: notifRouter,
-  activityRoutes:     actRouter,
-  reservationRoutes:  resRouter,
+  activityRoutes: actRouter,
+  reservationRoutes: resRouter,
 };

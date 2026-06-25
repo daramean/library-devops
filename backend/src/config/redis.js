@@ -61,7 +61,9 @@ async function connectRedis() {
           return;
         } catch (e) {
           // existing client failed, disconnect and recreate
-          try { redisClient.disconnect(); } catch (_) {}
+          try { redisClient.disconnect(); } catch (_err) {
+            // Ignore disconnect errors
+          }
           redisClient = null;
         }
       }
@@ -75,7 +77,9 @@ async function connectRedis() {
       return;
     } catch (err) {
       logger.warn(`Redis connection attempt ${attempt} failed: ${err.message}`);
-      try { if (redisClient) { redisClient.disconnect(); redisClient = null; } } catch (_) {}
+      try { if (redisClient) { redisClient.disconnect(); redisClient = null; } } catch (_err) {
+        // Ignore disconnect errors
+      }
       if (attempt < maxAttempts) {
         const delay = Math.min(baseDelay * 2 ** (attempt - 1), 5000);
         // eslint-disable-next-line no-await-in-loop

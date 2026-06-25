@@ -1,12 +1,10 @@
-const bcrypt  = require('bcryptjs');
-const jwt     = require('jsonwebtoken');
-const crypto  = require('crypto');
-const { v4: uuidv4 } = require('uuid');
-const { query }      = require('../config/database');
-const { getRedis }   = require('../config/redis');
-const { logActivity }= require('../utils/activityLogger');
-const AppError       = require('../utils/AppError');
-const logger         = require('../utils/logger');
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const crypto = require('crypto');
+const { query } = require('../config/database');
+const { getRedis } = require('../config/redis');
+const { logActivity } = require('../utils/activityLogger');
+const AppError = require('../utils/AppError');
 const { sendPasswordResetEmail } = require('../utils/emailService');
 
 const SALT_ROUNDS  = 12;
@@ -18,7 +16,7 @@ function signAccess(user) {
   return jwt.sign(
     { id: user.id, email: user.email, role: user.role_name },
     process.env.JWT_SECRET,
-    { expiresIn: ACCESS_TTL }
+    { expiresIn: ACCESS_TTL },
   );
 }
 
@@ -26,7 +24,7 @@ function signRefresh(userId) {
   return jwt.sign(
     { id: userId },
     process.env.JWT_REFRESH_SECRET,
-    { expiresIn: REFRESH_TTL }
+    { expiresIn: REFRESH_TTL },
   );
 }
 
@@ -42,7 +40,7 @@ exports.register = async (req, res) => {
     `INSERT INTO users (full_name, email, password_hash, phone)
      VALUES ($1, $2, $3, $4)
      RETURNING id, full_name, email, role_id, created_at`,
-    [full_name, email, hash, phone || null]
+    [full_name, email, hash, phone || null],
   );
 
   const user = rows[0];
@@ -65,7 +63,7 @@ exports.login = async (req, res) => {
      JOIN roles r ON u.role_id = r.id
      WHERE u.email = $1
        AND u.is_active = TRUE`,
-    [email]
+    [email],
   );
 
   const user = rows[0];
@@ -92,11 +90,11 @@ exports.login = async (req, res) => {
       accessToken,
       refreshToken,
       user: {
-        id:        user.id,
+        id: user.id,
         full_name: user.full_name,
-        email:     user.email,
-        role:      user.role_name,
-        avatar_url:user.avatar_url,
+        email: user.email,
+        role: user.role_name,
+        avatar_url: user.avatar_url,
       },
     },
   });
@@ -121,7 +119,7 @@ exports.refreshToken = async (req, res) => {
   const { rows } = await query(
     `SELECT u.*, r.name AS role_name FROM users u
      JOIN roles r ON u.role_id = r.id WHERE u.id = $1`,
-    [payload.id]
+    [payload.id],
   );
   if (!rows[0]) throw new AppError('User not found', 404);
 
@@ -149,7 +147,7 @@ exports.getMe = async (req, res) => {
             r.name AS role
      FROM users u JOIN roles r ON u.role_id = r.id
      WHERE u.id = $1`,
-    [req.user.id]
+    [req.user.id],
   );
   if (!rows[0]) throw new AppError('User not found', 404);
   res.json({ success: true, data: rows[0] });
@@ -160,7 +158,7 @@ exports.forgotPassword = async (req, res) => {
   const { email } = req.body;
 
   if (!email) throw new AppError('Email is required', 400);
-  
+
   // Validate email format
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailRegex.test(email)) {
@@ -169,7 +167,7 @@ exports.forgotPassword = async (req, res) => {
 
   const { rows } = await query(
     'SELECT id, full_name, email FROM users WHERE email = $1 AND is_active = TRUE',
-    [email]
+    [email],
   );
 
   const user = rows[0];
@@ -189,7 +187,7 @@ exports.forgotPassword = async (req, res) => {
   // Save token to database
   await query(
     'UPDATE users SET reset_token = $1, reset_token_expires = $2 WHERE id = $3',
-    [resetTokenHash, resetTokenExpires, user.id]
+    [resetTokenHash, resetTokenExpires, user.id],
   );
 
   // Build reset link
@@ -236,7 +234,7 @@ exports.resetPassword = async (req, res) => {
      WHERE reset_token = $1
        AND reset_token_expires > NOW()
        AND is_active = TRUE`,
-    [resetTokenHash]
+    [resetTokenHash],
   );
 
   const user = rows[0];
@@ -253,7 +251,7 @@ exports.resetPassword = async (req, res) => {
     `UPDATE users
      SET password_hash = $1, reset_token = NULL, reset_token_expires = NULL
      WHERE id = $2`,
-    [passwordHash, user.id]
+    [passwordHash, user.id],
   );
 
   await logActivity(user.id, 'password.reset_completed', 'user', user.id, req);
@@ -278,7 +276,7 @@ exports.updateProfile = async (req, res) => {
   if (profilePicUrl) {
     await query(
       'UPDATE users SET avatar_url = $1 WHERE id = $2',
-      [profilePicUrl, userId]
+      [profilePicUrl, userId],
     );
     await logActivity(userId, 'profile.picture_updated', 'user', userId, req);
   }
@@ -290,7 +288,7 @@ exports.updateProfile = async (req, res) => {
             r.name AS role
      FROM users u JOIN roles r ON u.role_id = r.id
      WHERE u.id = $1`,
-    [userId]
+    [userId],
   );
 
   if (!rows[0]) throw new AppError('User not found', 404);
@@ -322,7 +320,7 @@ exports.changePassword = async (req, res) => {
   // Fetch current user with password hash
   const { rows } = await query(
     'SELECT id, password_hash FROM users WHERE id = $1',
-    [userId]
+    [userId],
   );
 
   const user = rows[0];
@@ -340,7 +338,7 @@ exports.changePassword = async (req, res) => {
   // Update password
   await query(
     'UPDATE users SET password_hash = $1 WHERE id = $2',
-    [newPasswordHash, userId]
+    [newPasswordHash, userId],
   );
 
   await logActivity(userId, 'password.changed', 'user', userId, req);
